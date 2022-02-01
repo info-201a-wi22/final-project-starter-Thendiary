@@ -10,10 +10,13 @@ David G Hendry<br>
 Winter 2022
 </div>
 
+<br>
 <!--![Car Crash Scene](https://github.com/Thendiary/final-project-starter-Thendiary/blob/main/docs/p01-proposal-assests/Car_crash.jpg)-->
 <p align = "center">
   <img src ="https://github.com/Thendiary/final-project-starter-Thendiary/blob/main/docs/p01-proposal-assests/Car_crash.jpg">
 </p>
+
+<br>
 
 ## <div align = "center">Abstract</div>
 
