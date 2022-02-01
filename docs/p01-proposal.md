@@ -1,37 +1,42 @@
-# <center>Carccident: Analysis of fatal motor vehicle crashes in US </center>
+# <div align = "center">Carccident: Analysis of fatal motor vehicle crashes in US</div>
 
-**<center>Yuhan Zhang, Steven Chen, Qiuqing Ge, Ximing Sun </center>**
+**<div align = "center">Yuhan Zhang, Steven Chen, Qiuqing Ge, Ximing Sun</div>**
 
 <br>
-<center>The Information School - University of Washington<br>
+<div align = "center">
+The Information School - University of Washington<br>
 INFO-201: Technical Foundations of Informatic<br>
 David G Hendry<br>
-Winter 2022</center>
+Winter 2022
+</div>
 
-![Car Crash Scene](https://github.com/Thendiary/final-project-starter-Thendiary/blob/main/docs/p01-proposal-assests/Car_crash.jpg)
+<!--![Car Crash Scene](https://github.com/Thendiary/final-project-starter-Thendiary/blob/main/docs/p01-proposal-assests/Car_crash.jpg)-->
+<p align = "center">
+  <img src ="https://github.com/Thendiary/final-project-starter-Thendiary/blob/main/docs/p01-proposal-assests/Car_crash.jpg">
+</p>
 
-## <center>Abstract</center>
+## <div align = "center">Abstract</div>
 
 We are concerned with car accidents, because of the high death rate of car accidents. To address this concern, we plan to use R programming to show some facts and pay more attention to driving safety issues and obey traffic rules.<br>
 _Keywords:_ Motor Vehicle; Crashes; Fatality; USA; Factors of incident
 
-## <center>Introduction</center>
+## <div align = "center">Introduction</div>
 
-## <center>Design Situation</center>
+## <div align = "center">Design Situation</div>
 
-## <center>Research Questions</center>
+## <div align = "center">Research Questions</div>
 
-## <center>The Dataset</center>
+## <div align = "center">The Dataset</div>
 
-## <center>Expected Implications</center>
+## <div align = "center">Expected Implications</div>
 
-## <center>Limitations</center>
+## <div align = "center">Limitations</div>
 
-## <center>Acknowledgements</center>
+## <div align = "center">Acknowledgements</div>
 
-## <center>References</center>
+## <div align = "center">References</div>
 
-## <center>Appendix A: Questions</center>
+## <div align = "center">Appendix A: Questions</div>
 
 
 
