@@ -1,20 +1,65 @@
-# Title of your Project: Project Proposal 
+# <center>Carccident: Analysis of fatal motor vehicle crashes in US </center>
+
+**<center>Yuhan Zhang, Steven Chen, Qiuqing Ge, Ximing Sun </center>**
+
+<br>
+<center>The Information School - University of Washington<br>
+INFO-201: Technical Foundations of Informatic<br>
+David G Hendry<br>
+Winter 2022</center>
+
+![Car Crash Scene](https://github.com/Thendiary/final-project-starter-Thendiary/blob/main/docs/p01-proposal-assests/Car_crash.jpg)
+
+## <center>Abstract</center>
+
+We are concerned with car accidents, because of the high death rate of car accidents. To address this concern, we plan to use R programming to show some facts and pay more attention to driving safety issues and obey traffic rules.<br>
+_Keywords:_ Motor Vehicle; Crashes; Fatality; USA; Factors of incident
+
+## <center>Introduction</center>
+
+## <center>Design Situation</center>
+
+## <center>Research Questions</center>
+
+## <center>The Dataset</center>
+
+## <center>Expected Implications</center>
+
+## <center>Limitations</center>
+
+## <center>Acknowledgements</center>
+
+## <center>References</center>
+
+## <center>Appendix A: Questions</center>
+
+
+
+
+
+
+
+
+
+
+
+# Title of your Project: Project Proposal
 
 **TODO**: Edit this file. Your project proposal goes here. Save and delete the developer notes when done.
 
 ## Developer Notes
 
 * **Where is the project brief?**  [`../instructions/project-design-brief.pdf`](../instructions/project-design-brief.pdf).
-* **Making Progress**: We understand this work might be difficult. Also, we understand that your project ideas might not be completely worked out. So, we ask that you do the best you can. You will receive specific guidance from your TA and constructive feedback. We are confident that you will succeed! 
-* **What should be included in the proposal?** Every proposal will be different. It depends on your particular project.  That said, in the table below you will find the expected report elements.  It is important that you engage with and respond to the the Design Brief. 
-* **How should the proposal be formatted?** You should format your proposal using Markdown in this file. You should aim for a professional presentation - clear, concise, interesting, and free of spelling and grammatical errors. 
-* **What headings should we use?** As needed, the suggested headings below can be revised and new headings and sub-headings can be added. Please use headings, bullet lists, tables, figures, and other markdown code effectively - seek a professional presentation. 
+* **Making Progress**: We understand this work might be difficult. Also, we understand that your project ideas might not be completely worked out. So, we ask that you do the best you can. You will receive specific guidance from your TA and constructive feedback. We are confident that you will succeed!
+* **What should be included in the proposal?** Every proposal will be different. It depends on your particular project.  That said, in the table below you will find the expected report elements.  It is important that you engage with and respond to the the Design Brief.
+* **How should the proposal be formatted?** You should format your proposal using Markdown in this file. You should aim for a professional presentation - clear, concise, interesting, and free of spelling and grammatical errors.
+* **What headings should we use?** As needed, the suggested headings below can be revised and new headings and sub-headings can be added. Please use headings, bullet lists, tables, figures, and other markdown code effectively - seek a professional presentation.
 * **Finishing up.** When you are finished writing and formatting your proposal, save these developer notes(they might useful in the future). Then, delete them.
 * **Questions?** If you have questions, please ask your TA or post on Teams.
 
 |Element | Brief Description|
 |---------------| --------------
-|Code name | Give your project a _code name_, a short, evocative name for efficiently referring to your project. Your code name does not change! Examples: _Jazz-4_, _Rocking Fish_, etc. | 
+|Code name | Give your project a _code name_, a short, evocative name for efficiently referring to your project. Your code name does not change! Examples: _Jazz-4_, _Rocking Fish_, etc. |
 |Project title| Give your project a concise, interesting title that summarizes the entirety of your project. (Your title can change on subsequent deliverables.) |
 |Authors | Names of your team members and contact information (email addresses). |
 |Affiliation |  INFO-201: Technical Foundations of Informatics - The Information School - University of Washington |
@@ -30,3 +75,4 @@
 |Acknowledgements | Is there anyone you would like to thank? A librarian who helped you with your research? A Teaching Assistant? A friend who helped you find your data? Say thank you in this section.|
 |References | Include citations to your three references. See 2.0 Introduction. If you like, you can cite more than three references.  Please use a standard citation style of your choice.  See [Citing Sources](https://guides.lib.uw.edu/research/citations) at the UW Library. |
 |Appendix A: Questions| Do you have questions for your TA or instructor?  Include them here.|
+-->
