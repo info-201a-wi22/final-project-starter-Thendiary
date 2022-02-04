@@ -28,10 +28,28 @@ _Keywords_: car accident, severity, USA, factor
 
 ## <div align = "center">Introduction</div>
 
-We will analyze car accidents from four main aspects: death rate, regions, and road classification, weather conditions from 2017 to 2019 in the US. The death rate is calculated by dividing the number of people who die in car accidents by the number of people involved in car accidents. When locations are described here, they are specific to different states in the US. We are also concerned about the location of happening car accident, because the roughness of the road also has some impact on the cause of car accidents. Under this condition, we will also mention the classification of roads in this dataset to show the influence of status of the road condition. Sometimes the weather conditions also have an influence on car accidents. We also want to introduce this aspect to fulfill our project and mention the importance of the outside environment for people who drive the cars.
+We will analyze **car accidents** from _**four main**_ aspects: **death rate, regions, and road classification, weather conditions** from _**2017 to 2019**_ in the US. The _death rate_ is **calculated** by dividing the number of people who die in car accidents by the number of people involved in car accidents. When locations are described here, they are **specific to different states** in the US. We are also concerned about the location of happening car accident, because the **roughness of the road** also has some impact on the cause of car accidents. Under this condition, we will also mention the classification of roads in this dataset to show the influence of status of the road condition. Sometimes the **weather conditions** also have an influence on car accidents. We also want to introduce this aspect to fulfill our project and mention the importance of the outside environment for people who drive the cars.
 
 
 ## <div align = "center">Design Situation</div>
+- ### Date Frame: :earth_americas:
+ Our project is about **our life - car**. This question is also concerned by the United States Department of Transportation. [The United States Department of Transportation has already collected the data related to car accidents from 1975-2019.](https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/) The United States Department of Transportation has already collected the data related to car accidents from 1975-2019. The inspiration of our project is mainly from **two related research**. The first one is about the [relationship between the drivers’ personality and the possibility of being involved in car accidents](https://www.hindawi.com/journals/jat/2020/9084245/), while the second is mainly about [the relationship between laws and traffic accidents](https://www.sciencedirect.com/science/article/pii/S0001457518300873 ). For our project, we want to emerge in the relationship between road classification, natural conditions and region, using R language to analyse and summarize data to get our final conclusions.
+
+- ### Human Values: :hearts:
+ **Love, Empathy, Responsibility**. These values are derived from the _**panic**_ after seeing a relative in a car accident or shocking images in the daily news. Public service announcements about drunk driving and tired driving often appear on television, the debris from crashes, screeching brakes, injured people lying on the road. This series of scenes will make people feel really dismal. We sincerely hope from the bottom of our hearts that traffic accidents can be reduced. Then, **Responsibility will be activated by love and empathy.**
+
+- ### Direct Stakeholders: :car:
+ We think the direct stakeholders are **drivers, passengers and policemen**. As for drivers, they are likely to encounter car accidents, since they drive the cars all day. Because the passengers are likely to be involved in car accidents by chance. Policemen can be injured by car accidents while directing traffic.
+
+- ### Indirect Stakeholders: :boom:
+ We think indirect stakeholders are **drivers' families, automobile manufacturers, insurance companies**. If drivers are injured in car accidents or need to take responsibility for these car accidents, their family may face substantial reparations. The automobile manufacturers are also impacted by car accidents. Definitely, people will not buy the cars that are always involved in accidents. In this case, the manufacturers of this kind of car will be bankrupt. In car accidents, Insurance companies pay for the owner of the car whose car has collapsed.
+
+- #### Benefits: :dollar:
+ With the result from this project, drivers and police would **pay more attention to certain conditions** which would cause severe consequences. Manufacturers would learn how to **prevent these accidents happening** when in bad weather conditions. We suppose to call up attention from all society about the possibility.
+
+- #### Harm: :bug:
+ When we sort out this data, insurance companies may increase the insurance amount for accidents or related vehicles and reduce the payment amount of insurance companies. This will **harm the interests of car owners**.
+
 
 
 
