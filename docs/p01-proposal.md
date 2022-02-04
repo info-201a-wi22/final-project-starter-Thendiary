@@ -11,6 +11,7 @@ Winter 2022
 </div>
 
 <br>
+
 <!--![Car Crash Scene](https://github.com/Thendiary/final-project-starter-Thendiary/blob/main/docs/p01-proposal-assests/Car_crash.jpg)-->
 <p align = "center">
   <img src ="https://github.com/Thendiary/final-project-starter-Thendiary/blob/main/docs/p01-proposal-assests/Car_crash.jpg">
@@ -20,27 +21,64 @@ Winter 2022
 
 ## <div align = "center">Abstract</div>
 
-We are concerned with car accidents, because of the high death rate of car accidents. To address this concern, we plan to use R programming to show some facts and pay more attention to driving safety issues and obey traffic rules.<br>
-_Keywords:_ Motor Vehicle; Crashes; Fatality; USA; Factors of incident
+We are concerned with car accidents, because of the high death rate of car accidents. To address this concern, we plan to use R programming to show some facts and pay more attention to driving safety issues and obey traffic rules.
+
+_Keywords_: car accident, severity, USA, factor
+
 
 ## <div align = "center">Introduction</div>
 
+We will analyze car accidents from four main aspects: death rate, regions, and road classification, weather conditions from 2017 to 2019 in the US. The death rate is calculated by dividing the number of people who die in car accidents by the number of people involved in car accidents. When locations are described here, they are specific to different states in the US. We are also concerned about the location of happening car accident, because the roughness of the road also has some impact on the cause of car accidents. Under this condition, we will also mention the classification of roads in this dataset to show the influence of status of the road condition. Sometimes the weather conditions also have an influence on car accidents. We also want to introduce this aspect to fulfill our project and mention the importance of the outside environment for people who drive the cars.
+
+
 ## <div align = "center">Design Situation</div>
+
+
 
 ## <div align = "center">Research Questions</div>
 
+**“What is the death rate in every car accident?”**. Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the striking death rate to alert people and improve this situation.
+
+**"Is there a link between road classification and death rate in car accidents?"** In states with higher income, does the number of car accidents increase because of the increment of car ownership? Since people are inclined to race fast whenever they are, roads with better condition, usually with higher classification, could lead drivers to race on them.
+
+**With days in bad weather conditions, is it more car crashes happening? In a poor light situation, like midnight, are there more car accidents happening or not?**  If there is a clear link between these factors, people and the police department can pay more attention to car accidents on bad weather days.
+
+
 ## <div align = "center">The Dataset</div>
+
+[FARS: Fatal Motor Vehicle Accidents vehicle](https://www.nhtsa.gov/node/97996/251)<br>
+FARS is a census of fatal motor vehicle crashes with a set of data files documenting all qualifying fatalities that occurred within the 50 States, the District of Columbia, and Puerto Rico since 1975. This dataset contains 33519 observations of fatal motor vehicle crashes that occurred on public roads. The data consists of 95 properties that documented crash characteristics and environmental conditions of each incident. The data is collected and organized by the National Highway Traffic Safety Administration and aims to reduce the staggering human toll and property damage that motor vehicle traffic crashes impose on our society.
+
+[US-Accidents: A Countrywide Traffic Accident Dataset](https://smoosavi.org/datasets/us_accidents)<br>
+This dataset crawls traffic accidents data from online data providers including several APIs that stream the traffic event data. These APIs broadcast traffic events captured by a variety of entities, such as the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks. The dataset is collected and organized by Sobhan Moosavi and shared on Kaggle. In the dataset Mossavi uses 47 properties to document the environmental conditions, crash characteristics, and impact to the traffic. The current dataset has about 1.5 millions(1516064) observations across 49 states in the US, excluding data from the state of Hawaii.
+
+
+[Fatal Motor Vehicle Accidents vehicle](https://data-usdot.opendata.arcgis.com/datasets/fatal-motor-vehicle-accidents-vehicle/explore)<br>
+This dataset is collected and organized by the National Highway Traffic Safety Administration and aims to reduce the staggering human toll and property damage that motor vehicle traffic crashes impose on our society. It consists of more than 60 unique properties that documented information about the vehicle involved in fatal crashes in the year of 2019 including the model, year, tires, and etc. It now had documented 28,972 vehicles involved.
+
 
 ## <div align = "center">Expected Implications</div>
 
+Impacted by our car accident data, Vehicle manufacturers will adhere to the principle of "safety". Government will comprehensively strengthen hidden danger investigation, law enforcement management, artificial intelligence application, focusing on strengthening safety management and road traffic infrastructure construction of vehicles, roads and transportation enterprises. Policy maker will attach importance on Road Traffic Safety Law. Traffic violations that easily lead to traffic accidents will be  severely investigated and punished, such as drunk driving, overspeed driving, fatigue driving and so on. Road safety facilities should be comprehesively upgraded. In addition, it is also very important to educate citizens about traffic safety. Media workers will also pay more attention to this issue. The laws, regulations and safety knowledge of road traffic safety will be widely publicized in important sections of newspapers, radio, TV networks and other news media, and videos of typical traffic accident cases can be broadcast to enhance citizens' awareness of consciously abiding by laws and regulations.
+
+
 ## <div align = "center">Limitations</div>
 
+We have two limitations for our project. The first one is about the not available number, and the second one is about the loss of data.
+There may be some unavailability of resources for the aspect of weather conditions, since it is too hard for people to measure or attain the exact data about the weather condition when the car accident happened. Though we can roughly get some statistical data about the weather conditions by searching the local weather broadcast, it is impossible to get the exact measurements about the weather conditions.
+Another limitation is that the data related to the car accidents we found on the Internet is not comprehensive. These data found on the Internet only include the car accidents which are reported to police offices or insurance companies, which means some small scratching accidents would be likely to address the issues in private instead of reporting to police departments or insurance companies.
+
+
 ## <div align = "center">Acknowledgements</div>
+
+Thanks to the Internet, and thanks to the United States Department of Transportation, which collects this data every year and publishes it without any fee.
+
 
 ## <div align = "center">References</div>
 
 ## <div align = "center">Appendix A: Questions</div>
 
+_Can we change the structure of our project when doing the project?(We mean that can we change the aspects of our analysis?)_
 
 
 
@@ -51,7 +89,8 @@ _Keywords:_ Motor Vehicle; Crashes; Fatality; USA; Factors of incident
 
 
 
-# Title of your Project: Project Proposal
+
+<!--# Title of your Project: Project Proposal
 
 **TODO**: Edit this file. Your project proposal goes here. Save and delete the developer notes when done.
 
