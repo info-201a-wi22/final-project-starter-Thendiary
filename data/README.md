@@ -1,12 +1,13 @@
-# The `\data` Directory: Project Data Summary 
+# The `\data` Directory: Project Data Summary
 
 In our project, we use the following data files and Application Programming Interfaces:
 
 ### Data files (TODO: Update/delete)
 |Data File Name | Brief Description|
 |---------------| -----------------|
-|[example.cvs](./example.csv) | This file contains temperature data. (See report for details.)
-|[another-file](./filename2.csv) | Description ... 
+|[FARS: Fatal Motor Vehicle Accidents vehicle](./data/s.csv) | This file contains fatal Motor vehicle accidents data from 1975 to 2019 collected by United States Department of Transportation. We will emphasize analyzing the data between 2017 and 2019.(This a kind of conclusion created by United States Department of Transportation) (See report for details.)
+|[US-Accidents: A Countrywide Traffic Accident Dataset](./data/.csv) | This a dataset published by Sobhan Moosavi, describing the dataset which covers 49 states of the United States. The data is continuously being collected from February 2016, using several data providers. But we only analyzing the data between 2017 and 2019.
+|[Fatal Motor Vehicle Accidents vehicle](./data/Fatality_Analysis_Reporting_System.csv) | This file contains fatal motor vehicle accidents data divided by years. This is a specified dataset.
 
 ### Application Programming Interfaces (API) (TODO: Update/delete)
 
@@ -21,6 +22,6 @@ Sellers lists and the books that have been reviewed in the New York Times. An ov
 * See examples above.
 
 # NOTE 2:  Clear and Concise Documentation
-* Please remember your audience (prospective employers, open source colleagues, TAs, Instructors). Therefore, 
+* Please remember your audience (prospective employers, open source colleagues, TAs, Instructors). Therefore,
 aim for clarity and conciseness.
 * When done, be sure to delete these NOTE sections and the example CSV file (which are intended for you, of course, not your audience!)
