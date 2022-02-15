@@ -1,7 +1,7 @@
 ---
-title: "Your Project Title"
-author: "project team members"
-date: "1/22/2022"
+title: "Carccident: Analysis of fatal motor vehicle crashes in US"
+author: "Yuhan Zhang, Steven Chen, Qiuqing Ge, Ximing Sun"
+date: "2/15/2022"
 output: html_document
 ---
 
