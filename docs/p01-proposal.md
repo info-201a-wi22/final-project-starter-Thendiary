@@ -23,7 +23,7 @@ Winter 2022
 
 &nbsp;&nbsp;&nbsp;&nbsp;We are concerned with car accidents, because of the high death rate of car accidents. To address this concern, we plan to use R programming to show some facts and pay more attention to driving safety issues and obey traffic rules.
 
-_Keywords_: car accident, severity, USA, factor.
+_Keywords_: car accident, severity, the U.S., factor.
 
 
 ## <div align = "center">Introduction</div>
