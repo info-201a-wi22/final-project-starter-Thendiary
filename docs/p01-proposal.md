@@ -1,6 +1,6 @@
 # <div align = "center">Carccident: Analysis of fatal motor vehicle crashes in US</div>
 
-**<div align = "center">Yuhan Zhang, Steven Chen, Qiuqing Ge, Ximing Sun</div>**
+**<div align = "center">Yuhan Zhang, Steven Chen, Qiuqing(Echo) Ge, Ximing Sun</div>**
 
 <br>
 <div align = "center">
