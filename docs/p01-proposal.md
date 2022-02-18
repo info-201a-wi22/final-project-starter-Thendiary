@@ -75,7 +75,7 @@ Nowadays, road traffic safety is deteriorating, and road traffic accidents have 
 
 ## <div align = "center">The Dataset</div>
 
-#### **[FARS: Fatal Motor Vehicle Accidents vehicle[](https://www.nhtsa.gov/node/97996/251)**<br>
+#### **[FARS: Fatal Motor Vehicle Accidents vehicle](https://www.nhtsa.gov/node/97996/251)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[^1]FARS is a census of fatal motor vehicle crashes with a set of data files documenting all qualifying fatalities that occurred within the 50 States, the District of Columbia, and Puerto Rico since 1975. This dataset contains 33519 observations of fatal motor vehicle crashes that occurred on public roads. The data consists of 95 properties that documented crash characteristics and environmental conditions of each incident. The data is collected and organized by the National Highway Traffic Safety Administration and aims to reduce the staggering human toll and property damage that motor vehicle traffic crashes impose on our society.
 
 #### **[US-Accidents: A Countrywide Traffic Accident Dataset](https://www.kaggle.com/sobhanmoosavi/us-accidents)**<br>
