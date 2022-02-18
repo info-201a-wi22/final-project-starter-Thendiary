@@ -63,7 +63,12 @@ _Keywords_: car accident, severity, the U.S., factor.
 - **“What is the death rate in every car accident?”**.
 Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the striking death rate to alert people and improve this situation.
 
-- **"Is there a link between road classification and death rate in car accidents?"** In states with higher income, does the number of car accidents increase because of the increment of car ownership? Since people are inclined to race fast whenever they are, roads with better condition, usually with higher classification, could lead drivers to race on them.
+- **"Is there a link between road classification and death number in car accidents?"** In states with higher income, does the number of car accidents increase because of the increment of car ownership? Since people are inclined to race fast whenever they are, roads with better condition, usually with higher classification, could lead drivers to race on them.
+
+  - How to use R to find the answer?
+
+    - By using R, it is easily to find the relationship between road    classification and death number from 2017 to 2019. First download the dataset I want to analyze, and then distract the thing(the road classification and the death number) I need from the dataset from each years. Next step is that join the three dataset together and calculated the the total number of 2017 - 2019. Finally, making a graph about the the number of death and the road classification.
+    
 
 - **"With days in bad weather conditions, is it more car crashes happening? In a poor light situation, like midnight, are there more car accidents happening or not?"**  If there is a clear link between these factors, people and the police department can pay more attention to car accidents on bad weather days.
 
