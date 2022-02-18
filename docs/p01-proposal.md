@@ -65,15 +65,15 @@ Nowadays, road traffic safety is deteriorating, and road traffic accidents have 
 
 - **"Is there a link between road classification and death rate in car accidents?"** In states with higher income, does the number of car accidents increase because of the increment of car ownership? Since people are inclined to race fast whenever they are, roads with better condition, usually with higher classification, could lead drivers to race on them.
 
-- **"With days in bad weather conditions, is it more car crashes happening? In a poor light situation, like midnight, are there more car accidents happening or not?"**  If there is a clear link between these factors, people and the police department can pay more attention to car accidents on bad weather days.
+- **"Which auto makes involved in most fatal crahes in US?**  Each manufacturers design their products in different ways. Although model regulations and laws have enforce many safety features in the automobile industry, auto makers always make compromises when it comes to cost and safety. Using datasets we gathered, we want to find makers that involved the most in fatal crashes. Then based on the environment conditions and crash characteristics of each fatal crahes, depicts the model of what are common factors of fatal crahes of each auto makers.
 
 
 ## <div align = "center">The Dataset</div>
 
-#### **[FARS: Fatal Motor Vehicle Accidents vehicle](https://www.nhtsa.gov/node/97996/251)**<br>
-&nbsp;&nbsp;&nbsp;&nbsp;FARS is a census of fatal motor vehicle crashes with a set of data files documenting all qualifying fatalities that occurred within the 50 States, the District of Columbia, and Puerto Rico since 1975. This dataset contains 33519 observations of fatal motor vehicle crashes that occurred on public roads. The data consists of 95 properties that documented crash characteristics and environmental conditions of each incident. The data is collected and organized by the National Highway Traffic Safety Administration and aims to reduce the staggering human toll and property damage that motor vehicle traffic crashes impose on our society.
+#### **[FARS: Fatal Motor Vehicle Accidents vehicle[](https://www.nhtsa.gov/node/97996/251)**<br>
+&nbsp;&nbsp;&nbsp;&nbsp;[^1]FARS is a census of fatal motor vehicle crashes with a set of data files documenting all qualifying fatalities that occurred within the 50 States, the District of Columbia, and Puerto Rico since 1975. This dataset contains 33519 observations of fatal motor vehicle crashes that occurred on public roads. The data consists of 95 properties that documented crash characteristics and environmental conditions of each incident. The data is collected and organized by the National Highway Traffic Safety Administration and aims to reduce the staggering human toll and property damage that motor vehicle traffic crashes impose on our society.
 
-#### **[US-Accidents: A Countrywide Traffic Accident Dataset](https://smoosavi.org/datasets/us_accidents)**<br>
+#### **[US-Accidents: A Countrywide Traffic Accident Dataset](https://www.kaggle.com/sobhanmoosavi/us-accidents)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;This dataset crawls traffic accidents data from online data providers including several APIs that stream the traffic event data. These APIs broadcast traffic events captured by a variety of entities, such as the US and state departments of transportation, law enforcement agencies, traffic cameras, and traffic sensors within the road-networks. The dataset is collected and organized by Sobhan Moosavi and shared on Kaggle. In the dataset Mossavi uses 47 properties to document the environmental conditions, crash characteristics, and impact to the traffic. The current dataset has about 1.5 millions(1516064) observations across 49 states in the US, excluding data from the state of Hawaii.
 
 
@@ -110,7 +110,10 @@ _Can we change the structure of our project when doing the project?(We mean that
 
 
 
-
+[^1]: We are only using datasets from 2017 to 2019. Direct links to those three datasets are below:<br>
+2017: https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/2017/National/ <br>
+2018: https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/2018/National/ <br>
+2019: https://www.nhtsa.gov/file-downloads?p=nhtsa/downloads/FARS/2019/National/
 
 
 
