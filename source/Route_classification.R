@@ -53,5 +53,6 @@ p_rate
 
 # Find the place had the highest death number.
 highest_death_place <- total_route_death_17_19 %>%
-  filter(total_death == max(total_death, na.rm = TRUE)) %>%
+  filter(total_death_road == max(total_death_road)) %>%
   pull(ROUTENAME)
+
