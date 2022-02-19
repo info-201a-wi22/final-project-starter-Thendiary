@@ -7,11 +7,7 @@ as follows:
 
 |Report | Brief Description|
 |---------------| -----------------|
-<<<<<<< HEAD
-|[Project Proposal](./xxx) | A brief description of your P1:Project Proposal
-=======
 |[Project Proposal](./p01-proposal.md) | This is our proposal for our project, which includes introduction, design frame, questoins, etc.
->>>>>>> b881c6156c1fb9b4ca5af06b68c4e7eecc11bed2
 |[Exploratory Data Analysis](./xxx) | A brief description of your exploratory data analyis report
 |[Interactive Vizualizaiton](./xxx) | A brief description of your final report.
 
