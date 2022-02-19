@@ -78,7 +78,7 @@ _Keywords_: car accident, severity, the U.S., factor.
 
 <div align = "center"><h2>Research Questions</h2></div>
 
-- **鈥淲hat is the death rate in every car accident?鈥?**.
+- **hat is the death rate in every car accident?**.
 Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the striking death rate to alert people and improve this situation.
 
 <br>
@@ -86,10 +86,15 @@ Nowadays, road traffic safety is deteriorating, and road traffic accidents have 
 
 - **"Is there a link between road classification and death number in car accidents?"** In states with higher income, does the number of car accidents increase because of the increment of car ownership? Since people are inclined to race fast whenever they are, roads with better condition, usually with higher classification, could lead drivers to race on them.
 
-  - How to use R to find the answer?
+  - By using R, it is easily to find the relationship between road classification and death number from 2017 to 2019. First download the dataset I want to analyze, and then distract the thing (the road classification and the death number) I need from the dataset from each years. Next step is that join the three dataset together and calculated the the total number of 2017 - 2019. And find The proportion of deaths on different roads to total deaths. Finally, make a pie chart to find the proportion between the number of death and the road classification.
+```{r, echo=FALSE, message=FALSE}
+source("../source/Route_classification.R")
+plot(p_rate)
+```  
+  - The purpose of pie chart is that It's to warn people on what roads to be more careful in case of a car accident, because it shows the relationship between the proportion death and the road classification. We can easily find that the the proportion of death on the state highway is the highest among these routes and the proportion of death on the local street - Frontage Road is the lowest among these routes. 
 
-    - By using R, it is easily to find the relationship between road classification and death number from 2017 to 2019. First download the dataset I want to analyze, and then distract the thing (the road classification and the death number) I need from the dataset from each years. Next step is that join the three dataset together and calculated the the total number of 2017 - 2019. Finally, making a graph about the the number of death and the road classification.
-
+  - But for this chart, it has some flaws that the number of people walking on each road is not the same. Under this condition, there will be more people on the road, the possibility of accidents will be higher. But this study cannot solve this problem, because there is no data on the total number of people driving on each road, so it is impossible to remedy this deficiency.
+  
 <br>
 <br>
 
@@ -115,11 +120,8 @@ The above bar chart indicates the top five auto makers that involved in fatal ve
 <<<<<<< HEAD
   -For cases in 2018 and 2019, around half of people in fatal car accidents had been tested for drugs (in 2018, the percentage is "tested_2018", and in 2019 is "tested_2019"). For cases that has test record, in 2018, only "drug_found_negative_2018" cases had negative result, and for 2019, the percentage, which is "drug_found_negative_2018", doesn't change too much. In this chart, "other drugs" include those special cases and some drugs which is mixed by multiple chemicals. Despite the other drugs, the largest genre is marijuana, which is always considered in U.S. as a not very serious drug, and it stands for the largest part both in 2018 and 2019. This shows that people's ignorance for marijuana leads to addicted driving, and sometimes to severe car accidents.
 ```{r, echo=FALSE, message=FALSE}
-# Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
-# then "source" an R file (data_access.R)
 source("../source/drug_data.R")
-plot
+plot(plot_drug)
 ```
 =======
 

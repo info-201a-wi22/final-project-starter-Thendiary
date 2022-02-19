@@ -55,7 +55,6 @@ drug_percentage_2019 <- positive_test_2019 %>%
   group_by(DRUGRESNAME) %>%
   summarise(num = sum(count)) %>%
   filter(DRUGRESNAME != "not reported") 
-drug_test <- drug_test[1:10, ]
 
 # Summary of dataframe above.
 drug_test <- left_join(drug_percentage_2018, drug_percentage_2019, by = "DRUGRESNAME") %>%
@@ -72,12 +71,12 @@ drug_name <- c("Other drug", "Marijuana", "Desoxyn", "Amphetamine",
 drug_test$DRUGRESNAME <- drug_name
 
 # Plot
-plot <- ggplot(drug_test, aes(area = num, fill = DRUGRESNAME, label = percentage)) +
+plot_drug <- ggplot(drug_test, aes(area = num, fill = DRUGRESNAME, label = percentage)) +
   geom_treemap() +
   geom_treemap_text(size = 15, 
                     color = "white", 
                     place = "centre") +
   ggtitle("Drug specification for 2018-2019")
-plot
+plot_drug
 
 
