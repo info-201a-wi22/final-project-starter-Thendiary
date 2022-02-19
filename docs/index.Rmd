@@ -126,6 +126,7 @@ The above bar chart indicates the top five auto makers that involved in fatal ve
 - **What is the proportion of addicted driving?** For nowadays, drugs problem is concerning people living over world, and we want to find out if there is a high rate of addicted driving for fatal crashes? Since FARS only has 2018 and 2019 data for drugs situations, we would use their data for these years and find out the percentage of drug test positive cases and what is the most popular, in many cases is the marijuana, and have a sight into the situation of drugs in U.S..
 
   - For cases in 2018 and 2019, around half of people in fatal car accidents had been tested for drugs (in 2018, the percentage is "tested_2018", and in 2019 is "tested_2019"). For cases that has test record, in 2018, only "drug_found_negative_2018" cases had negative result, and for 2019, the percentage, which is "drug_found_negative_2018", doesn't change too much. In this chart, "other drugs" include those special cases and some drugs which is mixed by multiple chemicals. Despite the other drugs, the largest genre is marijuana, which is always considered in U.S. as a not very serious drug, and it stands for the largest part both in 2018 and 2019. This shows that people's ignorance for marijuana leads to addicted driving, and sometimes to severe car accidents.
+
 ```{r, echo=FALSE, message=FALSE}
 source("../source/drug_data.R")
 plot(plot_drug)
