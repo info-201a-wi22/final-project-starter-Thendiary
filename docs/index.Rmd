@@ -78,9 +78,15 @@ _Keywords_: car accident, severity, the U.S., factor.
 
 <div align = "center"><h2>Research Questions</h2></div>
 
-- **hat is the death rate in every car accident?**.
-Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the striking death rate to alert people and improve this situation.
+- **What is the spot death rate relating to using restraint in car accidents from 2017 to 2019?**.
+Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the strike death rate of not using any restraint in car accidents compared with death rate of using restraint to alert people using restraint on the car and improve this situation.
 
+```{r, echo=FALSE, message=FALSE}
+source("../source/fatality_relating_restraint.R")
+plot(plot_mortality)
+```
+
+The above bar chart indicates the top five auto makers that involved in fatal vehicle crashes from 2017 to 2019 in US. These five auto makers made up about 25% of all fatal crashes among 70 auto makers the datasets account for occured in the selected three years period. By analysing the crash characteristics and environmental conditions of crashes of those five brands, we will be able to model the typical characteristics of crashes and how their products protect the driver and passangers when accident takes place.
 <br>
 <br>
 

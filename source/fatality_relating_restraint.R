@@ -1,13 +1,11 @@
 library("dplyr")
 library("readr")
 library("ggplot2")
+library("tidyr")
+
 Person2017<- read_csv("../data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/Person.CSV")
 Person2018 <- read_csv("../data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/Person.CSV")
 Person2019 <- read_csv("../data/Carccident/Fatal_vehicle_crashes/FARS2019NationalCSV/Person.CSV")
-
-View(Person2019)
-View(Person2018)
-View(Person2017)
 
 # the died at scene rate for not using restraint system in 2017
 num_total_norest2017 <- Person2017 %>%
@@ -150,8 +148,6 @@ Rate2017 <- c(norest_deathrate2017, use_belt_deathrate2017, use_booster_seat_dea
 Rate2018 <- c(norest_deathrate2018, use_belt_deathrate2018, use_booster_seat_deathrate2018)
 Rate2019 <- c(norest_deathrate2019, use_belt_deathrate2019, use_booster_seat_deathrate2019)
 fatality <- data_frame(Type, Rate2017,Rate2018, Rate2019)
-print(fatality)
-View(fatality)
 
 ggplot(fatality, aes(x=Type, y=Rate2017))+
   geom_bar(stat='identity', fill="red")+
@@ -170,10 +166,8 @@ ggplot(fatality, aes(x=Type, y=Rate2019))+
   xlab("Using Restraint")
 
 fatalitylong <- gather(fatality, key="measure", value="value", c("Rate2017", "Rate2018", "Rate2019"))
-View(fatalitylong)
 
-
-ggplot(fatalitylong, aes(x = Type , y=value))+
+plot_mortality <- ggplot(fatalitylong, aes(x = Type , y=value))+
   geom_bar(stat='identity', fill="red")+
   facet_wrap(~measure)+
   labs(
@@ -183,6 +177,8 @@ ggplot(fatalitylong, aes(x = Type , y=value))+
     y = "Spot Death Rate",
   )+
   theme(axis.text.x = element_text(angle = -45, hjust = 0))
+plot_mortality
 
-
+- **What is the spot death rate relating to using restraint in car accidents from 2017 to 2019?**.
+Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the strike death rate of not using any restraint in car accidents compared with death rate of using restraint to alert people using restraint on the car and improve this situation.
   
