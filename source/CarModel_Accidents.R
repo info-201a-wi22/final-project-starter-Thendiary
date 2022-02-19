@@ -32,13 +32,14 @@ make_2017_2019 <- make_2017_2019 %>%
   summarise(three_year_avg = sum(Proportion) / 3)
 
 make_2017_2019 <- arrange(make_2017_2019, -three_year_avg)
-top_five <- make_2017_2019[1:5, ]
+top_five_df <- make_2017_2019[1:5, ]
 
 
-top_five <- ggplot(top_five) +
+top_five <- ggplot(top_five_df) +
   geom_col(mapping = aes(x= reorder(MAKENAME, +three_year_avg), y = three_year_avg, fill = MAKENAME)) +
   labs(x = "Auto Makers", y = "Avg fatal crashes involved in %" ,
        title = "Fatal crashes: top five automakers (2017 - 2019)") +
   scale_y_continuous(labels = scales::percent) +
   coord_flip()
-top_five
+
+total_incident <- num_incidents_2017 + num_incidents_2018 + num_incidents_2019
