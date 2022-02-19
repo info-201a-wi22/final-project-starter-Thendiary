@@ -8,10 +8,10 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+<!--
+<div align = "center"><h1>Carccident: Analysis of fatal motor vehicle crashes in US</h1></div>
 
-<div align = "center">Carccident: Analysis of fatal motor vehicle crashes in US</div>
-
-<div align = "center">Yuhan Zhang, Steven Chen, Qiuqing(Echo) Ge, Ximing Sun</div>**
+<div align = "center">Yuhan Zhang, Steven Chen, Qiuqing(Echo) Ge, Ximing Sun</div>-->
 
 <br>
 <div align = "center">
@@ -29,20 +29,25 @@ Winter 2022
 </p>
 
 <br>
+<br>
 
-<div align = "center">Abstract</div>
+<div align = "center"><h2>Abstract</h2></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;We are concerned with car accidents, because of the high death rate of car accidents. To address this concern, we plan to use R programming to show some facts and pay more attention to driving safety issues and obey traffic rules.
 
 _Keywords_: car accident, severity, the U.S., factor.
 
+<br>
+<br>
 
-<div align = "center">Introduction</div>
+<div align = "center"><h2>Introduction</h2></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;We will analyze **car accidents** from _**four main**_ aspects: **death rate, regions, and road classification, weather conditions** from _**2017 to 2019**_ in the US. The _death rate_ is **calculated** by dividing the number of people who die in car accidents by the number of people involved in car accidents. When locations are described here, they are **specific to different states** in the US. We are also concerned about the location of happening car accident, because the **roughness of the road** also has some impact on the cause of car accidents. Under this condition, we will also mention the classification of roads in this dataset to show the influence of status of the road condition. Sometimes the **weather conditions** also have an influence on car accidents. We also want to introduce this aspect to fulfill our project and mention the importance of the outside environment for people who drive the cars.
 
+<br>
+<br>
 
-<div align = "center">Design Situation</div>
+<div align = "center"><h2>Design Situation</h2></div>
 
 #### Date Frame: :earth_americas:
 
@@ -68,12 +73,16 @@ _Keywords_: car accident, severity, the U.S., factor.
 
 &nbsp;&nbsp;&nbsp;&nbsp;When we sort out this data, insurance companies may increase the insurance amount for accidents or related vehicles and reduce the payment amount of insurance companies. This will **harm the interests of car owners**.
 
+<br>
+<br>
 
-<div align = "center">Research Questions</div>
+<div align = "center"><h2>Research Questions</h2></div>
 
 - **鈥淲hat is the death rate in every car accident?鈥?**.
 Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the striking death rate to alert people and improve this situation.
 
+<br>
+<br>
 
 - **"Is there a link between road classification and death number in car accidents?"** In states with higher income, does the number of car accidents increase because of the increment of car ownership? Since people are inclined to race fast whenever they are, roads with better condition, usually with higher classification, could lead drivers to race on them.
 
@@ -81,9 +90,13 @@ Nowadays, road traffic safety is deteriorating, and road traffic accidents have 
 
     - By using R, it is easily to find the relationship between road classification and death number from 2017 to 2019. First download the dataset I want to analyze, and then distract the thing (the road classification and the death number) I need from the dataset from each years. Next step is that join the three dataset together and calculated the the total number of 2017 - 2019. Finally, making a graph about the the number of death and the road classification.
 
+<br>
+<br>
 
 
 - **"Which auto makes involved in most fatal crahes in US?"**  Each manufacturers design their products in different ways. Although model regulations and laws have enforce many safety features in the automobile industry, auto makers always make compromises when it comes to cost and safety. Using datasets we gathered, we want to find makers that involved the most in fatal crashes. Then based on the environment conditions and crash characteristics of each fatal crahes, depicts the model of what are common factors of fatal crahes of each auto makers.
+
+
 ```{r, echo=FALSE, message=FALSE}
 # Example 1: Note relative path, which can be read: Up one
 # directory(..), down into source (/source), and 
@@ -92,11 +105,18 @@ source("../source/CarModel_Accidents.R")
 plot(top_five)
 ```
 
+The above bar chart indicates the top five auto makers that involved in fatal vehicle crashes from 2017 to 2019 in US. These five auto makers made up about 25% of all fatal crashes among 70 auto makers the datasets account for occured in the selected three years period. By analysing the crash characteristics and environmental conditions of crashes of those five brands, we will be able to model the typical characteristics of crashes and how their products protect the driver and passangers when accident takes place.
+
+<br>
+<br>
+
 
 - **"What is the proption of addicted driving?"** For nowadays, drugs problem is concerning people living overworld, and we want to find out if there is a high rate of addicted driving for fatal crashes? Since FARS only has 2018 and 2019 data for drugs situations, we would use their data for these years and find out the percentage of drug test positive cases and what is the most popular, in many cases is the marihana, and have a sight into the situation of drugs in U.S..
 
+<br>
+<br>
 
-<div align = "center">The Dataset</div>
+<div align = "center"><h2>The Dataset</h2></div>
 
 #### **[FARS: Fatal Motor Vehicle Accidents vehicle](https://www.nhtsa.gov/node/97996/251)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;[^1]FARS is a census of fatal motor vehicle crashes with a set of data files documenting all qualifying fatalities that occurred within the 50 States, the District of Columbia, and Puerto Rico since 1975. This dataset contains 33519 observations of fatal motor vehicle crashes that occurred on public roads. The data consists of 95 properties that documented crash characteristics and environmental conditions of each incident. The data is collected and organized by the National Highway Traffic Safety Administration and aims to reduce the staggering human toll and property damage that motor vehicle traffic crashes impose on our society.
@@ -108,33 +128,35 @@ plot(top_five)
 #### **[Fatal Motor Vehicle Accidents vehicle](https://data-usdot.opendata.arcgis.com/datasets/fatal-motor-vehicle-accidents-vehicle/explore)**<br>
 &nbsp;&nbsp;&nbsp;&nbsp;This dataset is collected and organized by the National Highway Traffic Safety Administration and aims to reduce the staggering human toll and property damage that motor vehicle traffic crashes impose on our society. It consists of more than 60 unique properties that documented information about the vehicle involved in fatal crashes in the year of 2019 including the model, year, tires, and etc. It now had documented 28,972 vehicles involved.
 
+<br>
+<br>
 
-<div align = "center">Expected Implications</div>
+<div align = "center"><h2>Expected Implications</h2></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Impacted by our car accident data, Vehicle manufacturers will adhere to the principle of **"safety"**. Government will comprehensively strengthen hidden danger investigation, law enforcement management, artificial intelligence application, focusing on strengthening safety management and road traffic infrastructure construction of vehicles, roads and transportation enterprises. Policy maker will attach importance on Road Traffic Safety Law. Traffic violations that easily lead to traffic accidents will be  severely investigated and punished, such as drunk driving, overspeed driving, fatigue driving and so on. Road safety facilities should be comprehesively upgraded. In addition, it is also very important to educate citizens about traffic safety. Media workers will also pay more attention to this issue. The laws, regulations and safety knowledge of road traffic safety will be widely publicized in important sections of newspapers, radio, TV networks and other news media, and videos of typical traffic accident cases can be broadcast to enhance citizens' awareness of consciously abiding by laws and regulations.
 
+<br>
+<br>
 
-<div align = "center">Limitations</div>
+<div align = "center"><h2>Limitations</h2></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;We have two limitations for our project. :one: The first one is about the not available number, and the second one is about the loss of data. There may be some unavailability of resources for the aspect of weather conditions, since it is too hard for people to measure or attain the exact data about the weather condition when the car accident happened. Though we can roughly get some statistical data about the weather conditions by searching the local weather broadcast, it is impossible to get the exact measurements about the weather conditions. :two: Another limitation is that the data related to the car accidents we found on the Internet is not comprehensive. These data found on the Internet only include the car accidents which are reported to police offices or insurance companies, which means some small scratching accidents would be likely to address the issues in private instead of reporting to police departments or insurance companies.
 
+<br>
+<br>
 
-<div align = "center">Acknowledgements</div>
+<div align = "center"><h2>Acknowledgements</h2></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Thanks to the Internet, and thanks to the United States Department of Transportation, which collects this data every year and publishes it without any fee.
 
+<br>
+<br>
 
-<div align = "center">References</div>
+<div align = "center"><h2>References</h2></div>
 
 - Hu, Lin, et al. 鈥淎 Study on Correlation of Traffic Accident Tendency with Driver Characters Using in-Depth Traffic Accident Data.鈥? _Journal of Advanced Transportation_, <br /Hindawi, 2 June 2020, https://www.hindawi.com/journals/jat/2020/9084245/.
 
 - Rolison, Jonathan J., et al. 鈥淲hat Are the Factors That Contribute to Road Accidents? an Assessment of Law Enforcement Views, Ordinary Drivers' Opinions, and Road Accident Records.鈥? _Accident Analysis &amp; Prevention_, Pergamon, 9 Mar. 2018, https://www.sciencedirect.com/science/article/pii/S0001457518300873.
-
-
-
-<div align = "center">Appendix A: Questions</div>
-
-_Can we change the structure of our project when doing the project?(We mean that can we change the aspects of our analysis?)_
 
 
 
