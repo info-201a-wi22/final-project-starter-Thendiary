@@ -2,13 +2,13 @@ library("dplyr")
 library("tidyverse")
 library("ggplot2")
 
-vehicle_2017 <- read.csv("data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/Vehicle.csv")
+vehicle_2017 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/Vehicle.csv")
 num_incidents_2017 <- nrow(vehicle_2017)
 
-vehicle_2018 <- read.csv("data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/Vehicle.csv")
+vehicle_2018 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/Vehicle.csv")
 num_incidents_2018 <- nrow(vehicle_2018)
 
-vehicle_2019 <- read.csv("data/Carccident/Fatal_vehicle_crashes/FARS2019NationalCSV/Vehicle.csv")
+vehicle_2019 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2019NationalCSV/Vehicle.csv")
 num_incidents_2019 <- nrow(vehicle_2019)
 
 summary_make <- function(df, num_inci) {
@@ -39,5 +39,6 @@ top_five <- ggplot(top_five) +
   geom_col(mapping = aes(x= reorder(MAKENAME, -three_year_avg), y = three_year_avg, fill = MAKENAME)) +
   labs(x = "Auto Makers", y = "Avg fatal crashes involved in %" ,
        title = "Fatal crashes: top five automakers (2017 - 2019)") +
-  scale_y_continuous(labels = scales::percent)
+  scale_y_continuous(labels = scales::percent) +
+  coord_flip()
 top_five

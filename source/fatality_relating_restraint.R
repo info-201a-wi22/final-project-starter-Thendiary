@@ -24,7 +24,7 @@ norest_deathrate2017 <- num_notuse_died_at_scene2017 / num_total_norest2017
 norest_deathrate2017
 
 
-# the died at scene rate for using Shoulder and Lap Belt in 2017 
+# the died at scene rate for using Shoulder and Lap Belt in 2017 .
 
 num_total_use_belt2017 <- Person2017 %>%
   filter(REST_USENAME == "Shoulder and Lap Belt Used")%>%
