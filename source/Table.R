@@ -18,14 +18,23 @@ Drugs_2019 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2019Nationa
 
 table_2017 <- left_join(accident_2017, Person2017, by = "ST_CASE") %>%
   left_join(vehicle_2017, by = "ST_CASE") %>%
-  select(REST_USENAME, DOANAME, ROUTENAME, FATALS, ST_CASE, MAKENAME.x)
+  select(REST_USENAME, DOANAME, ROUTENAME, FATALS, ST_CASE, MAKENAME.x) %>%
+  mutate(Year = 2017, DRUGRESNAME = NA)
+table_2017 <- table_2017[1:10000,]
 
 table_2018 <- left_join(accident_2018, Person2018, by = "ST_CASE") %>%
   left_join(vehicle_2018, by = "ST_CASE") %>%
   left_join(Drugs_2018, by = "ST_CASE") %>%
-  select(REST_USENAME, DOANAME, ROUTENAME, FATALS, ST_CASE, DRUGRESNAME, MAKENAME.x)
+  select(REST_USENAME, DOANAME, ROUTENAME, FATALS, ST_CASE, DRUGRESNAME, MAKENAME.x) %>%
+  mutate(Year = 2018)
+table_2018 <- table_2018[1:10000,]
 
 table_2019 <- left_join(accident_2019, Person2019, by = "ST_CASE") %>%
   left_join(vehicle_2019, by = "ST_CASE") %>%
   left_join(Drugs_2019, by = "ST_CASE") %>%
-  select(REST_USENAME, DOANAME, ROUTENAME, FATALS, ST_CASE, DRUGRESNAME, MAKENAME.x)
+  select(REST_USENAME, DOANAME, ROUTENAME, FATALS, ST_CASE, DRUGRESNAME, MAKENAME.x) %>%
+  mutate(Year = 2019)
+table_2019 <- table_2019[1:10000,]
+
+table_total <- rbind(table_2017, table_2018, table_2019) %>%
+  group_by(Year)
