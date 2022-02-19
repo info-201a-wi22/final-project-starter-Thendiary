@@ -25,7 +25,7 @@ Winter 2022
 
 <!--![Car Crash Scene](https://github.com/Thendiary/final-project-starter-Thendiary/blob/main/docs/p01-proposal-assests/Car_crash.jpg)-->
 <p align = "center">
-  <img src ="https://github.com/info-201a-wi22/final-project-starter-Thendiary/blob/main/docs/p01-proposal-assests/Car_crash.jpg">
+  <img src ="https://raw.githubusercontent.com/info-201a-wi22/final-project-starter-Thendiary/main/docs/p01-proposal-assests/Car_crash.jpg">
 </p>
 
 <br>
@@ -43,7 +43,7 @@ _Keywords_: car accident, severity, the U.S., factor.
 <div align = "center"><h2>Introduction</h2></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;We will analyze **car accidents** from _**four main**_ aspects: **Using Restraint, drugs, and road classification, weather conditions** from _**2017 to 2019**_ in the US. _Using Restraint_ is especially important on the car. The _Using Restraint_ is **calculating** Spot Death Rate relating using retraint from 2017 to 2019. We are also concerned about the location of happening car accident, because the **roughness of the road** also has some impact on the cause of car accidents. Under this condition, we will also mention the classification of roads in the data set to show the influence of status of the road condition. Sometimes the **weather conditions** also have an influence on car accidents. We also want to introduce this aspect to fulfill our project and mention the importance of the outside environment for people who drive the cars.
-.
+
 <br>
 <br>
 
@@ -78,15 +78,14 @@ _Keywords_: car accident, severity, the U.S., factor.
 
 <div align = "center"><h2>Research Questions</h2></div>
 
-<<<<<<< HEAD
+
 - **What is the spot death rate relating to using restraint in car accidents from 2017 to 2019?**.
 Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the strike death rate of not using any restraint in car accidents compared with death rate of using restraint to alert people using restraint on the car and improve this situation.
-=======
+
 - **What is the death rate in every car accident?**.
 Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the striking death rate to alert people and improve this situation.
->>>>>>> 808e3acab9c90dfbc25cccc8d57ef7ff71f77507
 
-```{r, echo=FALSE, message=FALSE}
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("../source/fatality_relating_restraint.R")
 plot(plot_mortality)
 ```
