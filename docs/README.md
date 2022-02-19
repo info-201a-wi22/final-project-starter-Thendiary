@@ -7,7 +7,7 @@ as follows:
 
 |Report | Brief Description|
 |---------------| -----------------|
-|[Project Proposal (FIX ME!)](./xxx) | A brief description of your P1:Project Proposal
+|[Project Proposal](./p01-proposal.md) | This is our proposal for our project, which includes introduction, design frame, questoins, etc.
 |[Exploratory Data Analysis](./xxx) | A brief description of your exploratory data analyis report
 |[Interactive Vizualizaiton](./xxx) | A brief description of your final report. 
 
