@@ -60,8 +60,8 @@ _Keywords_: car accident, severity, the U.S., factor.
 
 ## <div align = "center">Research Questions</div>
 
-- **“What is the death rate in every car accident?”**.
-Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the striking death rate to alert people and improve this situation.
+- **“What is the Spot Death rates in car accidents are related to the use of restraint.”**.
+Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the striking death rate to alert people using restraint on the car.
 
 - **"Is there a link between road classification and death number in car accidents?"** In states with higher income, does the number of car accidents increase because of the increment of car ownership? Since people are inclined to race fast whenever they are, roads with better condition, usually with higher classification, could lead drivers to race on them.
 

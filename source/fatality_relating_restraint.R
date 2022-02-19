@@ -23,6 +23,7 @@ num_notuse_died_at_scene2017
 norest_deathrate2017 <- num_notuse_died_at_scene2017 / num_total_norest2017
 norest_deathrate2017
 
+
 # the died at scene rate for using Shoulder and Lap Belt in 2017 
 
 num_total_use_belt2017 <- Person2017 %>%
@@ -52,21 +53,6 @@ num_use_booster_seat_died_at_scene2017
 
 use_booster_seat_deathrate2017 <- num_use_booster_seat_died_at_scene2017 / num_total_use_booster_seat2017
 use_booster_seat_deathrate2017
-
-# the died at scene rate for Restraint Used(Type Unkown) in 2017
-
-num_total_use_unknown_restraint2017 <- Person2017 %>%
-  filter(REST_USENAME == "Restraint Used - Type Unknown")%>%
-  nrow()
-num_total_use_unknown_restraint2017
-
-num_use_unknown_restraint_died_at_scene2017 <- Person2017 %>%
-  filter(REST_USENAME == "Restraint Used - Type Unknown", DOANAME == "Died at Scene")%>%
-  nrow()
-num_use_unknown_restraint_died_at_scene2017
-
-use_unknown_restraint_deathrate2017 <- num_use_unknown_restraint_died_at_scene2017 / num_total_use_unknown_restraint2017
-use_unknown_restraint_deathrate2017
 
 # the died at scene rate for not using restraint system in 2018
 num_total_norest2018 <- Person2018 %>%
@@ -113,21 +99,6 @@ num_use_booster_seat_died_at_scene2018
 use_booster_seat_deathrate2018 <- num_use_booster_seat_died_at_scene2018 / num_total_use_booster_seat2018
 use_booster_seat_deathrate2018
 
-# the died at scene rate for Restraint Used(Type Unkown) in 2018
-
-num_total_use_unknown_restraint2018 <- Person2018 %>%
-  filter(REST_USENAME == "Restraint Used - Type Unknown")%>%
-  nrow()
-num_total_use_unknown_restraint2018
-
-num_use_unknown_restraint_died_at_scene2018 <- Person2018 %>%
-  filter(REST_USENAME == "Restraint Used - Type Unknown", DOANAME == "Died at Scene")%>%
-  nrow()
-num_use_unknown_restraint_died_at_scene2018
-
-use_unknown_restraint_deathrate2018 <- num_use_unknown_restraint_died_at_scene2018 / num_total_use_unknown_restraint2018
-use_unknown_restraint_deathrate2018
-
 # the died at scene rate for not using restraint system in 2019
 num_total_norest2019 <- Person2019 %>%
   select("REST_USENAME", "DOANAME") %>%
@@ -143,7 +114,7 @@ num_notuse_died_at_scene2019
 norest_deathrate2019 <- num_notuse_died_at_scene2019 / num_total_norest2019
 norest_deathrate2019
 
-# the died at scene rate for using Shoulder and Lap Belt in 2019.
+# the died at scene rate for using Shoulder and Lap Belt in 2019
 
 num_total_use_belt2019 <- Person2019 %>%
   filter(REST_USENAME == "Shoulder and Lap Belt Used")%>%
@@ -173,46 +144,45 @@ num_use_booster_seat_died_at_scene2019
 use_booster_seat_deathrate2019 <- num_use_booster_seat_died_at_scene2019 / num_total_use_booster_seat2019
 use_booster_seat_deathrate2019
 
-# the died at scene rate for Restraint Used(Type Unkown) in 2019
-
-num_total_use_unknown_restraint2019 <- Person2019 %>%
-  filter(REST_USENAME == "Restraint Used - Type Unknown")%>%
-  nrow()
-num_total_use_unknown_restraint2019
-
-num_use_unknown_restraint_died_at_scene2019 <- Person2019 %>%
-  filter(REST_USENAME == "Restraint Used - Type Unknown", DOANAME == "Died at Scene")%>%
-  nrow()
-num_use_unknown_restraint_died_at_scene2019
-
-use_unknown_restraint_deathrate2019 <- num_use_unknown_restraint_died_at_scene2019 / num_total_use_unknown_restraint2019
-use_unknown_restraint_deathrate2019
-
-# the average died at scene rate for not using restraint system
-ave_death_rate_norest <- (norest_deathrate2017 + norest_deathrate2018 + norest_deathrate2019) / 3
-ave_death_rate_norest
-is.vector(ave_death_rate_norest)
-
-ave_death_rate_using_belt <- (use_belt_deathrate2017 + use_belt_deathrate2018 + use_belt_deathrate2019) /3
-ave_death_rate_using_belt
-
-ave_death_rate_using_booster_seat <- (use_booster_seat_deathrate2017 + use_booster_seat_deathrate2018 + use_booster_seat_deathrate2019) /3
-ave_death_rate_using_booster_seat
-
-ave_death_rate_using_unknown_restraint <- (use_unknown_restraint_deathrate2017 + use_unknown_restraint_deathrate2018 + use_unknown_restraint_deathrate2019) / 3
-ave_death_rate_using_unknown_restraint
-
 # create data frame
-type <- c("No Restraint", "Using Shoulder and Lap Belt", "Using Booster Seat", "Using Restraint(Unknown way)")
-rate <- c(ave_death_rate_norest, ave_death_rate_using_belt, ave_death_rate_using_booster_seat, ave_death_rate_using_unknown_restraint )
-fatality <- data.frame(type, rate)
+Type <- c("No Restraint", "Using Shoulder and Lap Belt", "Using Booster Seat")
+Rate2017 <- c(norest_deathrate2017, use_belt_deathrate2017, use_booster_seat_deathrate2017)
+Rate2018 <- c(norest_deathrate2018, use_belt_deathrate2018, use_booster_seat_deathrate2018)
+Rate2019 <- c(norest_deathrate2019, use_belt_deathrate2019, use_booster_seat_deathrate2019)
+fatality <- data_frame(Type, Rate2017,Rate2018, Rate2019)
 print(fatality)
 View(fatality)
 
-# drawing a pie chart
-ggplot(df, aes(x = "", y = rate, fill = type)) +
-  geom_col(color = "black") +
-  coord_polar(theta = "y") +
-  geom_text(aes(label = rate),
-            position = position_stack(vjust = 0.5))+
-  scale_fill_discrete(labels = c("No Restraint", "Using Shoulder and Lap Belt", "Using Booster Seat", "Using Restraint(Unknown way)"))
+ggplot(fatality, aes(x=Type, y=Rate2017))+
+  geom_bar(stat='identity', fill="red")+
+  ylab("2017 - Spot Death Rate")+
+  xlab("Using Restraint")
+
+
+ggplot(fatality, aes(x=Type, y=Rate2018))+
+  geom_bar(stat='identity', fill="red")+
+  ylab("2018 - Spot Death Rate")+
+  xlab("Using Restraint")
+
+ggplot(fatality, aes(x=Type, y=Rate2019))+
+  geom_bar(stat='identity', fill="red")+
+  ylab("2019 - Spot Death Rate")+
+  xlab("Using Restraint")
+
+fatalitylong <- gather(fatality, key="measure", value="value", c("Rate2017", "Rate2018", "Rate2019"))
+View(fatalitylong)
+
+
+ggplot(fatalitylong, aes(x = Type , y=value))+
+  geom_bar(stat='identity', fill="red")+
+  facet_wrap(~measure)+
+  labs(
+    title = "The Spot Deaths Rate Relatin Using Restraint",
+    subtitle = "From 2017-2019",
+    x = "Restraints",
+    y = "Spot Death Rate",
+  )+
+  theme(axis.text.x = element_text(angle = -45, hjust = 0))
+
+
+  
