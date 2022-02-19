@@ -71,6 +71,10 @@ drug_name <- c("Other drug", "Marijuana", "Desoxyn", "Amphetamine",
                "Alprazolam", "Morphine")
 drug_test$DRUGRESNAME <- drug_name
 
+propotion <- drug_test %>%
+  filter(DRUGRESNAME == "Marijuana") %>%
+  pull(percentage)
+
 # Plot
 plot_drug <- ggplot(drug_test, aes(area = num, fill = DRUGRESNAME, label = percentage)) +
   geom_treemap() +

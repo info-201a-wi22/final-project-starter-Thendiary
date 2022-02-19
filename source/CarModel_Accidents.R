@@ -36,7 +36,7 @@ top_five_df <- make_2017_2019[1:5, ]
 
 
 top_five <- ggplot(top_five_df) +
-  geom_col(mapping = aes(x= reorder(MAKENAME, +three_year_avg), y = three_year_avg, fill = MAKENAME)) +
+  geom_col(mapping = aes(x= reorder(MAKENAME, +three_year_avg), y = three_year_avg, fill = MAKENAME), show.legend = FALSE) +
   labs(x = "Auto Makers", y = "Avg fatal crashes involved in %" ,
        title = "Fatal crashes: top five automakers (2017 - 2019)") +
   scale_y_continuous(labels = scales::percent) +
