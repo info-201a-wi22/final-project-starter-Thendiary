@@ -38,3 +38,5 @@ table_2019 <- table_2019[1:10000,]
 
 table_total <- rbind(table_2017, table_2018, table_2019) %>%
   group_by(Year)
+
+colnames(table_total) <- c('Use of Restraint', 'Death Type', 'Route Type', 'Num of Death', 'Case Number', 'Auto Maker', 'Year', 'Use of Drug')

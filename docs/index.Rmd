@@ -188,6 +188,18 @@ For drugs(specified for fourth plot), the best suggestion is “Never drive when
 <br>
 <br>
 
+<div align = "center"><h2>Tables</h2></div>
+```{r, echo=FALSE, message=FALSE, results='asis', error=FALSE, warning=FALSE}
+library("knitr")
+source("../source/Table.R")
+kable(head(table_total[1:10,]), format = "markdown")
+numob <- nrow(table_total)
+```
+This table includes all the information we need to start analysing our domains, which is merged from several data sets we found on the Internet. We only display first ten observations in the table as it contains `r numob` observations. 
+
+<br>
+<br>
+
 <div align = "center"><h2>Acknowledgements</h2></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Thanks to the Internet, and thanks to the United States Department of Transportation, which collects this data every year and publishes it without any fee.
