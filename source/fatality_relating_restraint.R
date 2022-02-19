@@ -178,7 +178,3 @@ plot_mortality <- ggplot(fatalitylong, aes(x = Type , y=value))+
   )+
   theme(axis.text.x = element_text(angle = -45, hjust = 0))
 plot_mortality
-
-- **What is the spot death rate relating to using restraint in car accidents from 2017 to 2019?**.
-Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the strike death rate of not using any restraint in car accidents compared with death rate of using restraint to alert people using restraint on the car and improve this situation.
-  

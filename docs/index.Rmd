@@ -91,7 +91,7 @@ source("../source/fatality_relating_restraint.R")
 plot(plot_mortality)
 ```
 
-The above bar chart indicates the top five auto makers that involved in fatal vehicle crashes from 2017 to 2019 in US. These five auto makers made up about 25% of all fatal crashes among 70 auto makers the datasets account for occured in the selected three years period. By analysing the crash characteristics and environmental conditions of crashes of those five brands, we will be able to model the typical characteristics of crashes and how their products protect the driver and passangers when accident takes place.
+This chart shows on-the-spot mortality rates relating to using restraint from 2017 to 2019. As can be clearly seen from the chart, the on-the-spot death rate without any restraint was significantly higher than that with some retraints. This is a reminder that people must use Restraint on the car.
 <br>
 <br>
 
