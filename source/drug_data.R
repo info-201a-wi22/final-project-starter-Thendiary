@@ -18,6 +18,13 @@ Drugs_tested_2019 <- Drugs_2019 %>%
   select(STATENAME, DRUGSPECNAME, DRUGRESNAME) %>%
   filter(DRUGRESNAME != "Test Not Given")
 
+tested_2018 <- paste(
+  round(nrow(Drugs_tested_2018) / nrow(Drugs_2018) * 100, 2),"%", sep = ""
+  )
+tested_2019 <- paste(
+  round(nrow(Drugs_tested_2019) / nrow(Drugs_2019) * 100, 2),"%", sep = ""
+)
+
 # Found how many positive cases.
 positive_test_2018 <- Drugs_tested_2018 %>%
   filter(DRUGRESNAME != "Tested, No Drugs Found/Negative")
@@ -38,8 +45,7 @@ drug_percentage_2018 <- positive_test_2018 %>%
   mutate(count = 1) %>%
   group_by(DRUGRESNAME) %>%
   summarise(num = sum(count)) %>%
-  filter(DRUGRESNAME != "not reported") %>%
-  mutate(percentage = num / sum(num) * 100)
+  filter(DRUGRESNAME != "not reported")
 
 positive_test_2019$DRUGRESNAME <- tolower(positive_test_2019$DRUGRESNAME) 
 positive_test_2019$DRUGRESNAME <-
@@ -48,12 +54,30 @@ drug_percentage_2019 <- positive_test_2019 %>%
   mutate(count = 1) %>%
   group_by(DRUGRESNAME) %>%
   summarise(num = sum(count)) %>%
-  filter(DRUGRESNAME != "not reported") %>%
-  mutate(percentage = num / sum(num) * 100)
+  filter(DRUGRESNAME != "not reported") 
+drug_test <- drug_test[1:10, ]
 
-drug_test <- left_join(drug_percentage_2018, drug_percentage_2019, by = "DRUGRESNAME")
+# Summary of dataframe above.
+drug_test <- left_join(drug_percentage_2018, drug_percentage_2019, by = "DRUGRESNAME") %>%
+  mutate(num = num.x + num.y) %>%
+  select(DRUGRESNAME, num) %>%
+  mutate(percentage = paste(round(num / sum(num, na.rm = T) * 100, 2), "%", sep = "")) %>%
+  arrange(-num)
+drug_test <- drug_test[1:10, ]
+
+# Change drug name since some of them is too long.
+drug_name <- c("Other drug", "Marijuana", "Desoxyn", "Amphetamine", 
+               "Delta 9", "Benzoylecgonine", "Cocaine", "Fentanyl", 
+               "Alprazolam", "Morphine")
+drug_test$DRUGRESNAME <- drug_name
+
+# Plot
+plot <- ggplot(drug_test, aes(area = num, fill = DRUGRESNAME, label = percentage)) +
+  geom_treemap() +
+  geom_treemap_text(size = 15, 
+                    color = "white", 
+                    place = "centre") +
+  ggtitle("Drug specification for 2018-2019")
+plot
 
 
-
-
-       
