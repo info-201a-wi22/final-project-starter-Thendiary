@@ -81,16 +81,19 @@ _Keywords_: car accident, severity, the U.S., factor.
 
 - **What is the spot death rate relating to using restraint in car accidents from 2017 to 2019?**.
 Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the strike death rate of not using any restraint in car accidents compared with death rate of using restraint to alert people using restraint on the car and improve this situation.
+<<<<<<< HEAD
 
 - **What is the death rate in every car accident?**.
 Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the striking death rate to alert people and improve this situation.
+=======
+>>>>>>> 56644c416f0c245c177d0c92c4b78fb6074566bd
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE}
 source("../source/fatality_relating_restraint.R")
 plot(plot_mortality)
 ```
 
-This chart shows on-the-spot mortality rates relating to using restraint from 2017 to 2019. As can be clearly seen from the chart, the on-the-spot death rate without any restraint was significantly higher than that with some retraints. This is a reminder that people must use Restraint on the car.
+This chart shows on-the-spot mortality rates relating to using restraint from 2017 to 2019. As can be clearly seen from the chart. The spot death rate of those who have not used any safety measures is much higher than those who have used safety belt or using booster seat This is a reminder that people must use Restraint on the car.
 <br>
 <br>
 
