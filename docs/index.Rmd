@@ -125,7 +125,7 @@ The above bar chart indicates the top five auto makers that involved in fatal ve
 
 - **What is the proportion of addicted driving?** For nowadays, drugs problem is concerning people living over world, and we want to find out if there is a high rate of addicted driving for fatal crashes? Since FARS only has 2018 and 2019 data for drugs situations, we would use their data for these years and find out the percentage of drug test positive cases and what is the most popular, in many cases is the marijuana, and have a sight into the situation of drugs in U.S..
 
-  - For cases in 2018 and 2019, around half of people in fatal car accidents had been tested for drugs (in 2018, the percentage is "tested_2018", and in 2019 is "tested_2019"). For cases that has test record, in 2018, only "drug_found_negative_2018" cases had negative result, and for 2019, the percentage, which is "drug_found_negative_2018", doesn't change too much. In this chart, "other drugs" include those special cases and some drugs which is mixed by multiple chemicals. Despite the other drugs, the largest genre is marijuana, which is always considered in U.S. as a not very serious drug, and it stands for the largest part both in 2018 and 2019. This shows that people's ignorance for marijuana leads to addicted driving, and sometimes to severe car accidents.
+  - For cases in 2018 and 2019, around half of people in fatal car accidents had been tested for drugs. For cases that has test record, in 2018, only 30.14% cases had negative result, and for 2019, the percentage, which is 26.17%, doesn't change too much. In this chart, "other drugs" include those special cases and some drugs which is mixed by multiple chemicals. Despite the other drugs, the largest genre is marijuana, which is always considered in U.S. as a not very serious drug, and it stands for the largest part both in 2018 and 2019. This shows that people's ignorance for marijuana leads to addicted driving, and sometimes to severe car accidents.
 
 ```{r, echo=FALSE, message=FALSE}
 source("../source/drug_data.R")
@@ -152,30 +152,38 @@ plot(plot_drug)
 
 <div align = "center"><h2>Implications</h2></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;Impacted by our car accident data, Vehicle manufacturers will adhere to the principle of **"safety"**. Government will comprehensively strengthen hidden danger investigation, law enforcement management, artificial intelligence application, focusing on strengthening safety management and road traffic infrastructure construction of vehicles, roads and transportation enterprises. Policy maker will attach importance on Road Traffic Safety Law. Traffic violations that easily lead to traffic accidents will be  severely investigated and punished, such as drunk driving, over speed driving, fatigue driving and so on. Road safety facilities should be comprehensively upgraded. In addition, it is also very important to educate citizens about traffic safety. Media workers will also pay more attention to this issue. The laws, regulations and safety knowledge of road traffic safety will be widely publicized in important sections of newspapers, radio, TV networks and other news media, and videos of typical traffic accident cases can be broadcast to enhance citizens' awareness of consciously abiding by laws and regulations.
+&nbsp;&nbsp;&nbsp;&nbsp;Impacted by our car accident data, Car drivers, Vehicle manufactures , Government will adhere to the principle of **"safety"**. And attach more attention to driving safety in accident-prone roads, such as slow down, pay attention to the driving of large cars, and for the safety of their own life and others, do not take drugs when driving. Vehicle manufactures improve the production and testing process by identifying the frequency of Vehicle manufactures in the data graph for car accident rate of the different brands.The Government will focus on formulating road safety policies to reduce the incidence of accidents on accident-prone roads.
 
 <br>
 <br>
 
 <div align = "center"><h2>Limitations</h2></div>
 
-&nbsp;&nbsp;&nbsp;&nbsp;We have two limitations for our project. The first one is about the not available number, and the second one is about the loss of data. There may be some unavailability of resources for the aspect of weather conditions, since it is too hard for people to measure or attain the exact data about the weather condition when the car accident happened. Though we can roughly get some statistical data about the weather conditions by searching the local weather broadcast, it is impossible to get the exact measurements about the weather conditions. Another limitation is that the data related to the car accidents we found on the Internet is not comprehensive. These data found on the Internet only include the car accidents which are reported to police offices or insurance companies, which means some small scratching accidents would be likely to address the issues in private instead of reporting to police departments or insurance companies.
+&nbsp;&nbsp;&nbsp;&nbsp;There are three limitations for this project. For the first chart, the statistical variety is not very comprehensive, we can only summarizes the same restriction ways in the three years. Another limitations is that the data for the second plot is kind of inaccurate, because some data is lost. The final limitations is that we find some data for the fourth plot is inadequate.  It only has two years (from 2018 to 2019).
 
 <br>
 <br>
 
 <div align = "center"><h2>Summary</h2></div>
-```{r, echo=FALSE, warning=FALSE, message=FALSE}
+```{r summary, echo=FALSE, warning=FALSE, message=FALSE}
 source("../source/Summary.R")
+fat_type <- summary[[5]]
+fat_2017 <- summary[[6]]
+fat_2018 <- summary[[7]]
+fat_2019 <- summary[[8]]
+highest_death <- summary[[2]]
+total_inci <- summary[[4]]
+top_five_make <- summary[[3]]
+porp <- summary[[1]]
 ```
 
-&nbsp;&nbsp;&nbsp;&nbsp;For the first plot - the death rate of car accidents, we can find that without using any restraint is always much higher than that of using restraint. This is `fatality$Rate2017` in 2017, `fatality$Rate2018` in 2018 and `fatality$Rate2019` in 2019 we analyzing in the R programming. We hope to illustrate the importance of using safety restraint on the car from this data graph and highly recommend people using some protective measures on the car to protect life safety.
+&nbsp;&nbsp;&nbsp;&nbsp;For the first plot - the death rate of car accidents, we can find that without using any restraint is always much higher than that of using restraint. We categorized the use of restraint into three the following three types: `r fat_type`. The death rates of use of each restraint are `r fat_2017` in 2017 respectively; `r fat_2018` in 2018 respectively; and `r fat_2019` in 2019 respectively. We analyzing in the R programming. We hope to illustrate the importance of using safety restraint on the car from this data graph and highly recommend people using some protective measures on the car to protect life safety.
 
-Depended on the second plot, it is important to know that when driving cars on the `highest_death_place`, the drivers should pay more attention on these thing. Because at this place, there are many people driving their cars, that why there are so many death number. The drivers should also need to pay attention when driving on U.S. Highway, because the speed of the car on that place is super high, under this condition, it is impossible to hold it.
+Depended on the second plot, it is important to know that when driving cars on the `r highest_death`, the drivers should pay more attention on these thing. Because at this place, there are many people driving their cars, that why there are so many death number. The drivers should also need to pay attention when driving on U.S. Highway, because the speed of the car on that place is super high, under this condition, it is impossible to hold it.
 
-As for the third plot, we can find that from January 2017 to December 2019, `total_incident` incidents occurred in USA. Among all 70 different auto makers NHTSA categorized, `top_five_df$MAKENAME` made up of about 25% of all incidents happened. This gives us some suggestions about buying cars.
+As for the third plot, we can find that from January 2017 to December 2019, `r total_inci` incidents occurred in USA. Among all 70 different auto makers NHTSA categorized, `r top_five_make` made up of about 25% of all incidents happened. This gives us some suggestions about buying cars.
 
-For drugs(specified for fourth plot), the best suggestion is “Never drive when you are high with something”, even if we know there must be some people who never remember that. Something else that these data show is that people do not recognize marijuana as a kind of drug, even this factor always appears in fatal car accidents. For 2018 and 2019, marijuana has a high proportion which is around `poprotion`. So when drive your cars, make sure you are not affected by drugs. This is the last suggestion we give to the readers.
+For drugs(specified for fourth plot), the best suggestion is “Never drive when you are high with something”, even if we know there must be some people who never remember that. Something else that these data show is that people do not recognize marijuana as a kind of drug, even this factor always appears in fatal car accidents. For 2018 and 2019, marijuana has a high proportion which is around `r porp`. So when drive your cars, make sure you are not affected by drugs. This is the last suggestion we give to the readers.
 
 <br>
 <br>
