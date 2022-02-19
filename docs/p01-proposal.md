@@ -67,10 +67,12 @@ Nowadays, road traffic safety is deteriorating, and road traffic accidents have 
 
   - How to use R to find the answer?
 
-    - By using R, it is easily to find the relationship between road    classification and death number from 2017 to 2019. First download the dataset I want to analyze, and then distract the thing(the road classification and the death number) I need from the dataset from each years. Next step is that join the three dataset together and calculated the the total number of 2017 - 2019. Finally, making a graph about the the number of death and the road classification.
-    
+    - By using R, it is easily to find the relationship between road classification and death number from 2017 to 2019. First download the dataset I want to analyze, and then distract the thing (the road classification and the death number) I need from the dataset from each years. Next step is that join the three dataset together and calculated the the total number of 2017 - 2019. Finally, making a graph about the the number of death and the road classification.
 
-- **"Which auto makes involved in most fatal crahes in US?**  Each manufacturers design their products in different ways. Although model regulations and laws have enforce many safety features in the automobile industry, auto makers always make compromises when it comes to cost and safety. Using datasets we gathered, we want to find makers that involved the most in fatal crashes. Then based on the environment conditions and crash characteristics of each fatal crahes, depicts the model of what are common factors of fatal crahes of each auto makers.
+
+- **"Which auto makes involved in most fatal crahes in US?"**  Each manufacturers design their products in different ways. Although model regulations and laws have enforce many safety features in the automobile industry, auto makers always make compromises when it comes to cost and safety. Using datasets we gathered, we want to find makers that involved the most in fatal crashes. Then based on the environment conditions and crash characteristics of each fatal crahes, depicts the model of what are common factors of fatal crahes of each auto makers.
+
+- **"What is the proption of addicted driving?"** For nowadays, drugs problem is concerning people living overworld, and we want to find out if there is a high rate of addicted driving for fatal crashes? Since FARS only has 2018 and 2019 data for drugs situations, we would use their data for these years and find out the percentage of drug test positive cases and what is the most popular, in many cases is the marihana, and have a sight into the situation of drugs in U.S..
 
 
 ## <div align = "center">The Dataset</div>
