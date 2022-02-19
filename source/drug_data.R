@@ -2,6 +2,7 @@ library("dplyr")
 library("tidyverse")
 library("ggplot2")
 library("stringr")
+install.packages("treematify")
 library(treemapify)
 
 # Read csv files.
