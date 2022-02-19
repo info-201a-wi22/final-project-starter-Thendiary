@@ -82,9 +82,6 @@ _Keywords_: car accident, severity, the U.S., factor.
 - **What is the spot death rate relating to using restraint in car accidents from 2017 to 2019?**.
 Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the strike death rate of not using any restraint in car accidents compared with death rate of using restraint to alert people using restraint on the car and improve this situation.
 <<<<<<< HEAD
-
-- **What is the death rate in every car accident?**.
-Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the striking death rate to alert people and improve this situation.
 =======
 >>>>>>> 56644c416f0c245c177d0c92c4b78fb6074566bd
 
