@@ -10,6 +10,7 @@ these sub-directories (TODO: Update/Delete)
 |[Death Number - Route Classification](./Route_classification.R) | Find the result of death number happened in different kind of road between 2017 and 2019.
 |[spot death rate - using restraint](./fatality_relating_restraint.R) | Calculate the spot death rate relating using restraint from 2017 to 2019.
 |[CarModel_Accidents](./CarModel_Accidents.R) | Analyze data about car manufactures and make a plot for the top 5 car manufacture.
+|[Summary](./summary.R)| Summarise data from the above scripts to be used in the report.
 
 
 
