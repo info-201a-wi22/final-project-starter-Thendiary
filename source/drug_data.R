@@ -2,8 +2,8 @@ library("dplyr")
 library("tidyverse")
 library("ggplot2")
 library("stringr")
-install.packages("treematify")
-library(treemapify)
+#install.packages("treematify")
+library("treemapify")
 
 # Read csv files.
 Drugs_2018 <- read.csv(
