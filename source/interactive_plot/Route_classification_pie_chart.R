@@ -3,9 +3,9 @@ library("ggplot2")
 
 
 # Download the dataset I need
-accident_2019 <- read.csv("../../data/Carccident/Fatal_vehicle_crashes/FARS2019NationalCSV/accident.CSV")
-accident_2018 <- read.csv("../../data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/accident.CSV")
-accident_2017 <- read.csv("../../data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/accident.CSV")
+accident_2019 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2019NationalCSV/accident.CSV")
+accident_2018 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/accident.CSV")
+accident_2017 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/accident.CSV")
 
 # Find the death number in different road in 2019.
 route_death_2019 <- accident_2019 %>%
