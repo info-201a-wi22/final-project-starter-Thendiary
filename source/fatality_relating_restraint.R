@@ -151,25 +151,25 @@ fatality <- data_frame(Type, Rate2017,Rate2018, Rate2019)
 
 # draw the plot
 ggplot(fatality, aes(x=Type, y=Rate2017))+
-  geom_bar(stat='identity', fill="red")+
+  geom_bar(stat='identity')+
   ylab("2017 - Spot Death Rate")+
   xlab("Using Restraint")
 
 
 ggplot(fatality, aes(x=Type, y=Rate2018))+
-  geom_bar(stat='identity', fill="red")+
+  geom_bar(stat='identity')+
   ylab("2018 - Spot Death Rate")+
   xlab("Using Restraint")
 
 ggplot(fatality, aes(x=Type, y=Rate2019))+
-  geom_bar(stat='identity', fill="red")+
+  geom_bar(stat='identity')+
   ylab("2019 - Spot Death Rate")+
   xlab("Using Restraint")
 
 fatalitylong <- gather(fatality, key="measure", value="value", c("Rate2017", "Rate2018", "Rate2019"))
 
-plot_mortality <- ggplot(fatalitylong, aes(x = Type , y=value))+
-  geom_bar(stat='identity', fill="red")+
+plot_mortality <- ggplot(fatalitylong, aes(x = Type , y=value, fill = Type))+
+  geom_bar(stat='identity')+
   facet_wrap(~measure)+
   labs(
     title = "The Spot Deaths Rate Relatin Using Restraint",
@@ -178,5 +178,6 @@ plot_mortality <- ggplot(fatalitylong, aes(x = Type , y=value))+
     y = "Spot Death Rate",
   )+
   geom_text(aes(label=value), vjust=1.6, color="white", size=3.5)+
-  theme(axis.text.x = element_text(angle = -45, hjust = 0))
+  theme(axis.text.x = element_text(angle = -45, hjust = 0)) 
+  
 plot_mortality

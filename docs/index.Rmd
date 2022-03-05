@@ -98,8 +98,7 @@ This chart shows on-the-spot mortality rates relating to using restraint from 20
 source("../source/Route_classification.R")
 plot(p_rate)
 ```  
-  - The purpose of pie chart is that It's to warn people on what roads to be more careful in case of a car accident, because it shows the relationship between the proportion death and the road classification. We can easily find that the the proportion of death on the state highway is the highest among these routes and the proportion of death on the local street - Frontage Road is the lowest among these routes. 
-
+  - The purpose of pie chart is that It's to warn people on what roads to be more careful in case of a car accident, because it shows the relationship between the proportion death and the road classification. My chart analyzes the death rates on different types of roads from 2017 to 2019, as you can see highway in generally (state highway, U.S. Highway and interstate)  is about 59 percent. So, when people drives cars on highway should pay more attention and avoid the car accident.
   - But for this chart, it has some flaws that the number of people walking on each road is not the same. Under this condition, there will be more people on the road, the possibility of accidents will be higher. But this study cannot solve this problem, because there is no data on the total number of people driving on each road, so it is impossible to remedy this deficiency.
   
 <br>
