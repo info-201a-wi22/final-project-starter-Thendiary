@@ -78,58 +78,21 @@ _Keywords_: car accident, severity, the U.S., factor.
 
 <div align = "center"><h2>Research Questions</h2></div>
 
-
 - **What is the spot death rate relating to using restraint in car accidents from 2017 to 2019?**.
 Nowadays, road traffic safety is deteriorating, and road traffic accidents have become a major problem affecting society and people's lives. We want to use the strike death rate of not using any restraint in car accidents compared with death rate of using restraint to alert people using restraint on the car and improve this situation.
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-source("../source/fatality_relating_restraint.R")
-plot(plot_mortality)
-```
-
-This chart shows on-the-spot mortality rates relating to using restraint from 2017 to 2019. As can be clearly seen from the chart. The spot death rate of those who have not used any safety measures is much higher than those who have used safety belt or using booster seat This is a reminder that people must use Restraint on the car.
-<br>
 <br>
 
 - **Is there a link between road classification and death number in car accidents?** In states with higher income, does the number of car accidents increase because of the increment of car ownership? Since people are inclined to race fast whenever they are, roads with better condition, usually with higher classification, could lead drivers to race on them.
 
-  - By using R, it is easily to find the relationship between road classification and death number from 2017 to 2019. First download the dataset I want to analyze, and then distract the thing (the road classification and the death number) I need from the dataset from each years. Next step is that join the three dataset together and calculated the the total number of 2017 - 2019. And find The proportion of deaths on different roads to total deaths. Finally, make a pie chart to find the proportion between the number of death and the road classification.
-```{r, echo=FALSE, message=FALSE}
-source("../source/Route_classification.R")
-plot(p_rate)
-```  
-  - The purpose of pie chart is that It's to warn people on what roads to be more careful in case of a car accident, because it shows the relationship between the proportion death and the road classification. My chart analyzes the death rates on different types of roads from 2017 to 2019, as you can see highway in generally (state highway, U.S. Highway and interstate)  is about 59 percent. So, when people drives cars on highway should pay more attention and avoid the car accident.
-  - But for this chart, it has some flaws that the number of people walking on each road is not the same. Under this condition, there will be more people on the road, the possibility of accidents will be higher. But this study cannot solve this problem, because there is no data on the total number of people driving on each road, so it is impossible to remedy this deficiency.
-  
 <br>
-<br>
-
 
 - **Which auto makes involved in most fatal crashes in US?**  Each manufacturers design their products in different ways. Although model regulations and laws have enforce many safety features in the automobile industry, auto makers always make compromises when it comes to cost and safety. Using datasets we gathered, we want to find makers that involved the most in fatal crashes. Then based on the environment conditions and crash characteristics of each fatal crashes, depicts the model of what are common factors of fatal crashes of each auto makers.
 
-
-```{r, echo=FALSE, message=FALSE}
-# Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
-# then "source" an R file (data_access.R)
-source("../source/CarModel_Accidents.R")
-plot(top_five)
-```
-
-The above bar chart indicates the top five auto makers that involved in fatal vehicle crashes from 2017 to 2019 in US. These five auto makers made up about 25% of all fatal crashes among 70 auto makers the datasets account for occured in the selected three years period. By analysing the crash characteristics and environmental conditions of crashes of those five brands, we will be able to model the typical characteristics of crashes and how their products protect the driver and passengers when accident takes place.
-
-<br>
 <br>
 
 
 - **What is the proportion of addicted driving?** For nowadays, drugs problem is concerning people living over world, and we want to find out if there is a high rate of addicted driving for fatal crashes? Since FARS only has 2018 and 2019 data for drugs situations, we would use their data for these years and find out the percentage of drug test positive cases and what is the most popular, in many cases is the marijuana, and have a sight into the situation of drugs in U.S..
-
-  - For cases in 2018 and 2019, around half of people in fatal car accidents had been tested for drugs. For cases that has test record, in 2018, only 30.14% cases had negative result, and for 2019, the percentage, which is 26.17%, doesn't change too much. In this chart, "other drugs" include those special cases and some drugs which is mixed by multiple chemicals. Despite the other drugs, the largest genre is marijuana, which is always considered in U.S. as a not very serious drug, and it stands for the largest part both in 2018 and 2019. This shows that people's ignorance for marijuana leads to addicted driving, and sometimes to severe car accidents.
-
-```{r, echo=FALSE, message=FALSE}
-source("../source/drug_data.R")
-plot(plot_drug)
-```
 
 <br>
 <br>
@@ -149,21 +112,90 @@ plot(plot_drug)
 <br>
 <br>
 
-<div align = "center"><h2>Implications</h2></div>
+<div align = "center"><h2>Findings</h2></div>
+
+**What is the spot death rate relating to using restraint in car accidents from 2017 to 2019?**.
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE}
+source("../source/fatality_relating_restraint.R")
+plot(plot_mortality)
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;This chart shows on-the-spot mortality rates relating to using restraint from 2017 to 2019. As can be clearly seen from the chart. The spot death rate of those who have not used any safety measures is much higher than those who have used safety belt or using booster seat This is a reminder that people must use Restraint on the car.
+
+<br>
+
+**Is there a link between road classification and death number in car accidents?**
+
+```{r, echo=FALSE, message=FALSE}
+source("../source/Route_classification.R")
+plot(p_rate)
+```  
+
+&nbsp;&nbsp;&nbsp;&nbsp;By using R, it is easily to find the relationship between road classification and death number from 2017 to 2019. First download the dataset I want to analyze, and then distract the thing (the road classification and the death number) I need from the dataset from each years. Next step is that join the three dataset together and calculated the the total number of 2017 - 2019. And find The proportion of deaths on different roads to total deaths. Finally, make a pie chart to find the proportion between the number of death and the road classification.
+
+&nbsp;&nbsp;&nbsp;&nbsp;The purpose of pie chart is that It's to warn people on what roads to be more careful in case of a car accident, because it shows the relationship between the proportion death and the road classification. My chart analyzes the death rates on different types of roads from 2017 to 2019, as you can see highway in generally (state highway, U.S. Highway and interstate) is about 59 percent. So, when people drives cars on highway should pay more attention and avoid the car accident.
+
+&nbsp;&nbsp;&nbsp;&nbsp;But for this chart, it has some flaws that the number of people walking on each road is not the same. Under this condition, there will be more people on the road, the possibility of accidents will be higher. But this study cannot solve this problem, because there is no data on the total number of people driving on each road, so it is impossible to remedy this deficiency.
+
+<br>
+
+**Which auto makes involved in most fatal crashes in US?**
+
+```{r, echo=FALSE, message=FALSE}
+# Example 1: Note relative path, which can be read: Up one
+# directory(..), down into source (/source), and 
+# then "source" an R file (data_access.R)
+source("../source/CarModel_Accidents.R")
+plot(top_five)
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;The above bar chart indicates the top five auto makers that involved in fatal vehicle crashes from 2017 to 2019 in US. These five auto makers made up about 25% of all fatal crashes among 70 auto makers the datasets account for occured in the selected three years period. By analysing the crash characteristics and environmental conditions of crashes of those five brands, we will be able to model the typical characteristics of crashes and how their products protect the driver and passengers when accident takes place.
+
+<br>
+
+**What is the proportion of addicted driving?**
+
+```{r, echo=FALSE, message=FALSE}
+source("../source/drug_data.R")
+plot(plot_drug)
+```
+
+&nbsp;&nbsp;&nbsp;&nbsp;For cases in 2018 and 2019, around half of people in fatal car accidents had been tested for drugs. For cases that has test record, in 2018, only 30.14% cases had negative result, and for 2019, the percentage, which is 26.17%, doesn't change too much. In this chart, "other drugs" include those special cases and some drugs which is mixed by multiple chemicals. Despite the other drugs, the largest genre is marijuana, which is always considered in U.S. as a not very serious drug, and it stands for the largest part both in 2018 and 2019. This shows that people's ignorance for marijuana leads to addicted driving, and sometimes to severe car accidents.
+
+<br>
+
+**Table of Critical Information**
+
+```{r, echo=FALSE, message=FALSE, results='asis', error=FALSE, warning=FALSE}
+library("knitr")
+source("../source/Table.R")
+kable(head(table_2019), format = "markdown")
+numob <- nrow(table_2019)
+```
+This table shows the sample data we concluded for a single case that can be used to answer four questions we purposed. We analyize cases in a year first then combine them for three year charts. A case usually consist of six different aspects as indicated by the column name of table. The case id is number assigned to identify a case which is unique in one year. One thing that requires attention is that due to the classification approach took by NHTSA, repeated row occurs when one of the six aspects is different as shown in the table.
+
+<br>
+<br>
+
+<div align = "center"><h2>Discussion</h2></div>
+
+<br>
+
+<div align = "center"><h4>Implications</h4></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;Impacted by our car accident data, Car drivers, Vehicle manufactures , Government will adhere to the principle of **"safety"**. And attach more attention to driving safety in accident-prone roads, such as slow down, pay attention to the driving of large cars, and for the safety of their own life and others, do not take drugs when driving. Vehicle manufactures improve the production and testing process by identifying the frequency of Vehicle manufactures in the data graph for car accident rate of the different brands.The Government will focus on formulating road safety policies to reduce the incidence of accidents on accident-prone roads.
 
 <br>
-<br>
 
-<div align = "center"><h2>Limitations</h2></div>
+<div align = "center"><h4>Limitations</h4></div>
 
 &nbsp;&nbsp;&nbsp;&nbsp;There are three limitations for this project. For the first chart, the statistical variety is not very comprehensive, we can only summarizes the same restriction ways in the three years. Another limitations is that the data for the second plot is kind of inaccurate, because some data is lost. The final limitations is that we find some data for the fourth plot is inadequate.  It only has two years (from 2018 to 2019).
 
 <br>
 <br>
 
-<div align = "center"><h2>Summary</h2></div>
+<div align = "center"><h2>Conclusion</h2></div>
 ```{r summary, echo=FALSE, warning=FALSE, message=FALSE}
 source("../source/Summary.R")
 fat_type <- summary[[5]]
@@ -183,18 +215,6 @@ Depended on the second plot, it is important to know that when driving cars on t
 As for the third plot, we can find that from January 2017 to December 2019, `r total_inci` incidents occurred in USA. Among all 70 different auto makers NHTSA categorized, `r top_five_make` made up of about 25% of all incidents happened. This gives us some suggestions about buying cars.
 
 For drugs(specified for fourth plot), the best suggestion is “Never drive when you are high with something”, even if we know there must be some people who never remember that. Something else that these data show is that people do not recognize marijuana as a kind of drug, even this factor always appears in fatal car accidents. For 2018 and 2019, marijuana has a high proportion which is around `r porp`. So when drive your cars, make sure you are not affected by drugs. This is the last suggestion we give to the readers.
-
-<br>
-<br>
-
-<div align = "center"><h2>Tables</h2></div>
-```{r, echo=FALSE, message=FALSE, results='asis', error=FALSE, warning=FALSE}
-library("knitr")
-source("../source/Table.R")
-kable(head(table_total[1:10,]), format = "markdown")
-numob <- nrow(table_total)
-```
-This table includes all the information we need to start analysing our domains, which is merged from several data sets we found on the Internet. We only display first ten observations in the table as it contains `r numob` observations. 
 
 <br>
 <br>
