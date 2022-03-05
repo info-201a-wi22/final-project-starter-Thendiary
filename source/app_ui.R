@@ -11,7 +11,7 @@ ui <- navbarPage(
   title = "Project Example",
   position = "fixed-top",
   intro_tab,
-  report_tab,
+  report,
   summary_takeaway_tab,
   Restraint_chart_panel.R
 )
