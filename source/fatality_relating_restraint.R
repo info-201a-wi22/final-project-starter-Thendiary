@@ -1,7 +1,7 @@
 library("dplyr")
-library("readr")
+#library("readr")
 library("ggplot2")
-library("tidyr")
+#library("tidyr")
 
 Person2017<- read_csv("../data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/Person.CSV")
 Person2018 <- read_csv("../data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/Person.CSV")
@@ -144,9 +144,9 @@ use_booster_seat_deathrate2019
 
 # create data frame
 Type <- c("No Restraint", "Using Shoulder and Lap Belt", "Using Booster Seat")
-Rate2017 <- c(round(norest_deathrate2017, digits = 2), round(use_belt_deathrate2017, digits = 2),round(use_booster_seat_deathrate2017, digits = 2))
-Rate2018 <- c(round(norest_deathrate2018, digits = 2), round(use_belt_deathrate2018, digits = 2),round(use_booster_seat_deathrate2018, digits = 2))
-Rate2019 <- c(round(norest_deathrate2019, digits = 2), round(use_belt_deathrate2019, digits = 2),round(use_booster_seat_deathrate2019, digits =2))
+Rate2017 <- c(round(norest_deathrate2017, digits = 4), round(use_belt_deathrate2017, digits = 4),round(use_booster_seat_deathrate2017, digits = 4))
+Rate2018 <- c(round(norest_deathrate2018, digits = 4), round(use_belt_deathrate2018, digits = 4),round(use_booster_seat_deathrate2018, digits = 4))
+Rate2019 <- c(round(norest_deathrate2019, digits = 4), round(use_belt_deathrate2019, digits = 4),round(use_booster_seat_deathrate2019, digits = 4))
 fatality <- data_frame(Type, Rate2017,Rate2018, Rate2019)
 
 # draw the plot
