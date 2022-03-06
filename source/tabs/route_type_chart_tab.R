@@ -17,16 +17,12 @@ chart_2 <-tabPanel(
                        "2018 " = "route_death_2018_rate",
                        "2019" = "route_death_2019_rate",
                        "2017 - 2019" = "total_rate")
-      ),
-      selectInput(
-        inputId = "shape",
-        label = "Choose One type graph you interested",
-        choices = list("Bar chart!==_==" = "bar",
-                       "Scatter graph :)" = "scatter")
       )
     ),
     mainPanel(
-      plotlyOutput("plotly_graph")
+      plotlyOutput("plotly_graph"),
+      h6("Just Reminder: The propotional death number is calulate by the the death 
+         number on certain road divided by the total number of time interval.")
     )
   )
 )

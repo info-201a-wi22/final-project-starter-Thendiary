@@ -31,19 +31,11 @@ data <- route_death_17_19 %>%
   mutate(total_rate = round(total_death_road / sum_death_num, digits = 2))
 
 
-graph <- function(data, variable, shape) {
-  plotly_graph <- plot_ly(
-    data = data,
-    x = ~ROUTENAME,
-    y = ~data[[variable]],
-    type = shape,
-    mode = "markers"
-  ) %>%
-    layout(
-      title = "proportional death number of people and the type of the road.",
-      xaxis = list(title = "Route Type"),
-      yaxis = list(title = "the Proportional Death Number(Rate) of People")
-    )
+graph <- function(data, variable) {
+  plotly_graph <- plot_ly(data = data, labels = ~ROUTENAME, values = ~data[[variable]], type = 'pie') %>%
+    layout(title = 'The Proportion of Deaths On Each Kind of Road',
+           xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+           yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
   
   return(plotly_graph)
 }

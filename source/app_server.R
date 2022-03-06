@@ -16,7 +16,7 @@ server <- function(input, output) {
     #})
     
     output$plotly_graph <- renderPlotly({
-      return(graph(data, input$variable, input$shape))
+      return(graph(data, input$variable))
     })
     
     auto_choice <- reactive({
