@@ -6,6 +6,7 @@ library("dplyr")
 
 source("../source/interactive_plot/Restraint_Chart.R")
 source("../source/interactive_plot/auto_tab_plot.R")
+source("../source/interactive_plot/drug_plot.R")
 
 server <- function(input, output) {
   
@@ -31,5 +32,9 @@ server <- function(input, output) {
     
     output$report <- renderUI({
       includeHTML("../docs/index.html")
+    })
+    
+    output$drug <- renderPlot({
+      plot_drug(input$drugs)
     })
 }
