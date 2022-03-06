@@ -7,7 +7,8 @@ report <- tabPanel(
   fluidRow(
     column(
       12,
-      includeHTML("../docs/index.html")
+      htmlOutput("report")
+      #includeHTML("../docs/index.html")
     )
   )
 )

@@ -7,7 +7,7 @@ source("interactive_plot/auto_tab_plot.R")
 
 auto_scatter_tab <- tabPanel(
   "Auto Maker",
-  titlePanel(h1("Auto Makers involvement in fatal car crashes", align ="center")),
+  titlePanel(h1("Auto Makers involvement in fatal car crashes", align = "center")),
   sidebarLayout(
     sidebarPanel(
       radioButtons(

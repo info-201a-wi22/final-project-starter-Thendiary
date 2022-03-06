@@ -7,7 +7,7 @@ source("interactive_plot/Restraint_Chart.R")
 
 chart <-tabPanel(
   "Restraint in car",
-  titlePanel("ABCD"),
+  titlePanel(h1("Fatality rate with Use of Restraint", align = "center")),
   sidebarLayout(
     sidebarPanel(
       radioButtons(

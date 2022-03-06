@@ -37,7 +37,7 @@ auto_scatter <- function(df) {
   
   scatter <- ggplotly(scatter, tooltip = "text")
   
-  return(scatter)
+  print(scatter)
 }
 
 #auto_scatter(make_all)
