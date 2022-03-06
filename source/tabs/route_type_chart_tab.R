@@ -1,10 +1,13 @@
-library(shiny)
-library(plotly)
+library("shiny")
+library("ggplot2")
+library("plotly")
+library("knitr")
+library("dplyr")
 
-source("interactive_plot/Route_classification_pie_chart.R")
-chart <-tabPanel(
+source("interactive_plot/Route_classification_chart.R")
+chart_2 <-tabPanel(
   "Route classification",
-  titlePanel("The relationship between the route classification and the number of death."),
+  titlePanel("The relationship between the proportional death number of people and the type of the road.."),
   sidebarLayout(
     sidebarPanel(
       selectInput(
@@ -15,9 +18,15 @@ chart <-tabPanel(
                        "2019" = "route_death_2019_rate",
                        "2017 - 2019" = "total_rate")
       ),
+      selectInput(
+        inputId = "shape",
+        label = "Choose One type graph you interested",
+        choices = list("Bar chart!==_==" = "bar",
+                       "Scatter graph :)" = "scatter")
+      )
     ),
     mainPanel(
-      plotlyOutput("graph")
+      plotlyOutput("plotly_graph")
     )
   )
 )

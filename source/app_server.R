@@ -4,14 +4,19 @@ library("plotly")
 library("knitr")
 library("dplyr")
 
-source("../source/interactive_plot/Restraint_Chart.R")
+#source("../source/interactive_plot/Restraint_Chart.R")
+source("../source/interactive_plot/Route_classification_chart.R")
 source("../source/interactive_plot/auto_tab_plot.R")
 
 server <- function(input, output) {
   
 # This is the graph.
-    output$chart_ggplot <- renderPlotly({
-      return(build_graph(fatality, input$variable))
+    #output$chart_ggplot <- renderPlotly({
+    #  return(build_graph(fatality, input$variable))
+    #})
+    
+    output$plotly_graph <- renderPlotly({
+      return(graph(data, input$variable, input$shape))
     })
     
     auto_choice <- reactive({
