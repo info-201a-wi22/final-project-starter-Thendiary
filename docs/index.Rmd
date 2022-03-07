@@ -154,7 +154,7 @@ plot(top_five)
 
 <br>
 
-**What is the proportion of addicted driving?**
+**What is the proportion of drug types in addictive driving cases?**
 
 ```{r, echo=FALSE, message=FALSE}
 source("../source/drug_data.R")
