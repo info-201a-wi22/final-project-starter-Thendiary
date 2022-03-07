@@ -43,6 +43,7 @@ build_graph <- function(data, YR) {
   chart_ggplot <- fatality %>%
     ggplot(aes(x = Type, y =.data[[YR]], fill = Type)) +
     geom_col() +
+    geom_text(aes(label=paste0(.data[[YR]] * 100, "%")), vjust=-1.5, size=3.5)+
     theme(axis.text.x = element_text(angle = -45, hjust = 0)) +
     labs(x = "Restraint Type",
          y = y_axis,
@@ -52,4 +53,6 @@ build_graph <- function(data, YR) {
   
   return(chart_ggplot)
 }
+
+build_graph(fatality, "DAvgRate")
 
