@@ -5,13 +5,19 @@ library("knitr")
 library("dplyr")
 
 source("../source/interactive_plot/Restraint_Chart.R")
+source("../source/interactive_plot/Route_classification_chart.R")
 source("../source/interactive_plot/auto_tab_plot.R")
+source("../source/interactive_plot/drug_plot.R")
 
 server <- function(input, output) {
   
 # This is the graph.
     output$chart_ggplot <- renderPlotly({
-      return(build_graph(fatality, input$variable))
+      return(build_graph(fatality, input$YR))
+    })
+    
+    output$plotly_graph <- renderPlotly({
+      return(graph(data, input$variable))
     })
     
     auto_choice <- reactive({
@@ -31,5 +37,9 @@ server <- function(input, output) {
     
     output$report <- renderUI({
       includeHTML("../docs/index.html")
+    })
+    
+    output$drug <- renderPlot({
+      plot_drug(input$drugs)
     })
 }
