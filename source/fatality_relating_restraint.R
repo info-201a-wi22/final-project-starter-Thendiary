@@ -2,10 +2,6 @@ library("dplyr")
 library("tidyverse")
 library("ggplot2")
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 7a203a75de7a3ceb6e5f7052e060f4efc5611cae
 Person2017<- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/Person.CSV")
 Person2018 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/Person.CSV")
 Person2019 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2019NationalCSV/Person.CSV")

@@ -5,7 +5,7 @@ intro <- tabPanel(
   titlePanel(h1("Carccident: Analysis of fatal motor vehicle crashes in US", align = "center")),
   fluidRow(
     column(2),
-    column(10,
+    column(8,
            HTML("<p>&nbsp;&nbsp;&nbsp;&nbsp;
            We will analyze fatal car accidents from <strong>four main aspects</strong>: <i>Restraint, Drugs, Road type, and automaker</i> from 2017 to 2019 in the US. 
            <strong>Using Restraint</strong> is especially important on the car which is calculated by Spot Death Rate elating using retraint from 2017 to 2019. 
