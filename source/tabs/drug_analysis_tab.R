@@ -17,7 +17,7 @@ drug_tab <- tabPanel(
         inputId = "drugs",
         label = "Percentage of Drugs",
         choices = as.list(drug_name),
-        selected = "Other drugs"
+        selected = "Other drug"
       )
     ),
     mainPanel(
@@ -26,6 +26,3 @@ drug_tab <- tabPanel(
   )
 )
 
-ui <- navbarPage(drug_tab)
-
-shinyApp(ui = ui, server = server)
