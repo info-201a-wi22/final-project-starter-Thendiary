@@ -43,6 +43,8 @@ build_graph <- function(data, variable) {
   chart_ggplot <- data %>%
     ggplot(aes(x =  Type, y = .data[[variable]], fill = Type)) +
     geom_col() +
+    geom_text(aes(label= variable), vjust=1.6, color="white", size=3.5)+
+    theme(axis.text.x = element_text(angle = -45, hjust = 0)) +
     labs(x = "Restraint Type",
          y = y_axis,
          title = paste0(y_axis, "relating using Restraints in Car"))
@@ -52,5 +54,4 @@ build_graph <- function(data, variable) {
   return(chart_ggplot)
 }
 
-build_graph(fatality, "DAvgRate")
 
