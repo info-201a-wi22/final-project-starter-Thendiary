@@ -16,7 +16,8 @@ chart_2 <-tabPanel(
         choices = list("2017" = "route_death_2017_rate",
                        "2018 " = "route_death_2018_rate",
                        "2019" = "route_death_2019_rate",
-                       "2017 - 2019" = "total_rate")
+                       "2017 - 2019" = "total_rate"),
+        selected = "total_rate"
       )
     ),
     mainPanel(

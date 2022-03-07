@@ -27,23 +27,22 @@ fatality <- data_frame(Type, DRate2017,DRate2018, DRate2019, DAvgRate)
 
 
 # build graph
-build_graph <- function(data, variable) {
-  varaible <- as.character(variable)
+build_graph <- function(data, YR) {
+  varaible <- as.character(YR)
   y_axis <- "Rate"
-  if(variable == "DRate2017") {
+  if(YR == "DRate2017") {
     y_axis <- "Spot Death Rate in 2017"
-  } else if (variable == "DRate2018") {
+  } else if (YR == "DRate2018") {
     y_axis <- "Spot Death Rate in 2018"
-  } else if (variable == "DRate2019"){
+  } else if (YR == "DRate2019"){
     y_axis <- "Spot Death Rate in 2019"
-  } else if (variable == "DAvgRate") {
+  } else if (YR == "DAvgRate") {
     y_axis <- "Average Spot Death Rate from 2017 to 2019"
   }
   
-  chart_ggplot <- data %>%
-    ggplot(aes(x =  Type, y = .data[[variable]], fill = Type)) +
+  chart_ggplot <- fatality %>%
+    ggplot(aes(x = Type, y =.data[[YR]], fill = Type)) +
     geom_col() +
-    geom_text(aes(label= variable), vjust=1.6, color="white", size=3.5)+
     theme(axis.text.x = element_text(angle = -45, hjust = 0)) +
     labs(x = "Restraint Type",
          y = y_axis,
@@ -53,5 +52,4 @@ build_graph <- function(data, variable) {
   
   return(chart_ggplot)
 }
-
 
