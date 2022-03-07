@@ -37,7 +37,7 @@ build_graph <- function(data, YR) {
   } else if (YR == "DRate2019"){
     y_axis <- "Spot Death Rate in 2019"
   } else if (YR == "DAvgRate") {
-    y_axis <- "Average Spot Death Rate from 2017 to 2019"
+    y_axis <- "Average Spot Death Rate(2017-2019)"
   }
   
   chart_ggplot <- fatality %>%
@@ -47,7 +47,7 @@ build_graph <- function(data, YR) {
     theme(axis.text.x = element_text(angle = -45, hjust = 0)) +
     labs(x = "Restraint Type",
          y = y_axis,
-         title = paste0(y_axis, "relating using Restraints in Car"))
+         title = paste0(y_axis, " relating using Restraints in Car"))
   
   chart_ggplot <- ggplotly(chart_ggplot)
   
