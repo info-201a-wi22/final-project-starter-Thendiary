@@ -27,7 +27,3 @@ drug_tab <- tabPanel(
     )
   )
 )
-<<<<<<< HEAD
-
-=======
->>>>>>> bf57244c4a8ae5b479c3495b55f18e60de225535
