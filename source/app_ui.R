@@ -12,7 +12,7 @@ source("../source/tabs/intro_tab.R")
 source("../source/tabs/drug_analysis_tab.R")
 
 ui <- navbarPage(
-  title = "Project Example",
+  title = "Carccident",
   intro,
   chart,
   chart_2,
