@@ -11,7 +11,7 @@ chart <-tabPanel(
   sidebarLayout(
     sidebarPanel(
       radioButtons(
-                   inputId = "variable", 
+                   inputId = "YR", 
                    label = h3("Time Range"),
                    choices = list("2017" = "DRate2017", 
                                   "2018" = "DRate2018", 

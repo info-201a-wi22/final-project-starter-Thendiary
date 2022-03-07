@@ -1,7 +1,6 @@
 library("dplyr")
-#library("readr")
+library("tidyverse")
 library("ggplot2")
-#library("tidyr")
 
 Person2017<- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/Person.CSV")
 Person2018 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/Person.CSV")

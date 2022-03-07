@@ -5,7 +5,11 @@ library("stringr")
 library("treemapify")
 library("knitr")
 
+<<<<<<< HEAD
 source("interactive_plot/drug_chart.R")
+=======
+source("drug_data.R")
+>>>>>>> 7a203a75de7a3ceb6e5f7052e060f4efc5611cae
 
 drug_tab <- tabPanel(
   "Addictive Driving",
@@ -24,4 +28,12 @@ drug_tab <- tabPanel(
       plotOutput("drug")
     )
   )
+<<<<<<< HEAD
 )
+=======
+)
+
+ui <- navbarPage(drug_tab)
+
+shinyApp(ui = ui, server = server)
+>>>>>>> 7a203a75de7a3ceb6e5f7052e060f4efc5611cae
