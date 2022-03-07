@@ -4,6 +4,7 @@ library("ggplot2")
 library("stringr")
 library("treemapify")
 library("knitr")
+library("shiny")
 
 source("interactive_plot/drug_chart.R")
 
@@ -19,7 +20,7 @@ drug_tab <- tabPanel(
         inputId = "drugs",
         label = "Percentage of Drugs",
         choices = as.list(drug_name),
-        selected = "Other drug"
+        selected = drug_name
       )
     ),
     mainPanel(
