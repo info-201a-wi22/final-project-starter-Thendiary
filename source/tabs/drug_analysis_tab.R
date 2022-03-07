@@ -5,6 +5,8 @@ library("stringr")
 library("treemapify")
 library("knitr")
 
+source("interactive_plot/drug_chart.R")
+
 source("drug_data.R")
 
 drug_tab <- tabPanel(
@@ -25,4 +27,7 @@ drug_tab <- tabPanel(
     )
   )
 )
+<<<<<<< HEAD
 
+=======
+>>>>>>> bf57244c4a8ae5b479c3495b55f18e60de225535
