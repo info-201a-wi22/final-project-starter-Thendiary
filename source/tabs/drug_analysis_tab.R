@@ -19,7 +19,7 @@ drug_tab <- tabPanel(
         inputId = "drugs",
         label = "Percentage of Drugs",
         choices = as.list(drug_name),
-        selected = "Other drugs"
+        selected = "Other drug"
       )
     ),
     mainPanel(
@@ -27,3 +27,7 @@ drug_tab <- tabPanel(
     )
   )
 )
+<<<<<<< HEAD
+
+=======
+>>>>>>> bf57244c4a8ae5b479c3495b55f18e60de225535
