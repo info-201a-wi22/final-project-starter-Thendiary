@@ -83,7 +83,7 @@ Nowadays, road traffic safety is deteriorating, and road traffic accidents have 
 
 <br>
 
-- **Is there a link between road classification and death number in car accidents?** In states with higher income, does the number of car accidents increase because of the increment of car ownership? Since people are inclined to race fast whenever they are, roads with better condition, usually with higher classification, could lead drivers to race on them.
+- **Is there a link between road classification and death number in car accidents?** Nowadays, because the government has different requirements for roads in different places, it may result that two roads not far apart have completely different road conditions. In this case we want to talk about whether different types of roads give different impressions of the number of deaths. Moreover, in states with higher income, does the number of car accidents increase because of the increment of car ownership? Since people are inclined to race fast whenever they are, roads with better condition, usually with higher classification, could lead drivers to race on them. 
 
 <br>
 
@@ -134,7 +134,7 @@ plot(p_rate)
 
 &nbsp;&nbsp;&nbsp;&nbsp;By using R, it is easily to find the relationship between road classification and death number from 2017 to 2019. First download the dataset I want to analyze, and then distract the thing (the road classification and the death number) I need from the dataset from each years. Next step is that join the three dataset together and calculated the the total number of 2017 - 2019. And find The proportion of deaths on different roads to total deaths. Finally, make a pie chart to find the proportion between the number of death and the road classification.
 
-&nbsp;&nbsp;&nbsp;&nbsp;The purpose of pie chart is that It's to warn people on what roads to be more careful in case of a car accident, because it shows the relationship between the proportion death and the road classification. My chart analyzes the death rates on different types of roads from 2017 to 2019, as you can see highway in generally (state highway, U.S. Highway and interstate) is about 59 percent. So, when people drives cars on highway should pay more attention and avoid the car accident.
+&nbsp;&nbsp;&nbsp;&nbsp;This chart **analyzes** the data of death number in different type of road in different road from 2017 to 2019. The **purpose** of pie chart is that it is to warn people on what roads to be more careful in case of a car accident, because it shows the relationship between the proportion death and the road classification. _**In this pie chart, we do find the relationship between the type of road and the death number in different road.**_ It is easily to find that highway in generally (state highway, U.S. Highway and interstate) is about 59 percent from 2017 to 2019, which is over 50%. As for other kind of road there are small proportions in the rest of different road types(County Road, Local Street - Frontage Road, Local Street - Municipality, Local Street - Township, Other and Unknown). So, when people drives cars on general highway should pay more attention and avoid the car accident.
 
 &nbsp;&nbsp;&nbsp;&nbsp;But for this chart, it has some flaws that the number of people walking on each road is not the same. Under this condition, there will be more people on the road, the possibility of accidents will be higher. But this study cannot solve this problem, because there is no data on the total number of people driving on each road, so it is impossible to remedy this deficiency.
 
