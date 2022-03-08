@@ -5,9 +5,9 @@ account: junyich
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 5802700
-bundleId: 5655097
+bundleId: 5655115
 url: https://junyich.shinyapps.io/final-project-starter-Thendiary/
-when: 1646717495.32527
-lastSyncTime: 1646717495.32527
+when: 1646718057.02506
+lastSyncTime: 1646718057.02506
 asMultiple: FALSE
 asStatic: FALSE

@@ -23,7 +23,14 @@ chart_2 <-tabPanel(
     mainPanel(
       plotlyOutput("plotly_graph"),
       h6("Just Reminder: The propotional death number is calulate by the the death 
-         number on certain road divided by the total number of time interval.")
+         number on certain road divided by the total number of time interval."),
+      p("The chart above shows the number of road deaths by category between 
+        2017 and 2019. As shown in the chart, of the nine roads in the dataset, 
+        of all the fatal crashes that occurred during the selected three-year 
+        period, people were more likely to crash when they were driving on 
+        highways. We can analyze the road conditions of these three expressways 
+        to warn drivers that they should pay attention to protect their own 
+        safety and the safety of others when driving on expressways.")
     )
   )
 )
