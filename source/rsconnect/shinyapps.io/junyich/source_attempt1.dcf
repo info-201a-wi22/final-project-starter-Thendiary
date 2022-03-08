@@ -1,0 +1,13 @@
+name: source_attempt1
+title: source_attempt1
+username:
+account: junyich
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 5803066
+bundleId: 5655050
+url: https://junyich.shinyapps.io/source_attempt1/
+when: 1646716562.14752
+lastSyncTime: 1646716562.14752
+asMultiple: FALSE
+asStatic: FALSE
