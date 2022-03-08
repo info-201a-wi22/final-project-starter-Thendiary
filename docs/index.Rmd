@@ -35,7 +35,7 @@ Winter 2022
 
 &nbsp;&nbsp;&nbsp;&nbsp;We are concerned with car accidents, because of the high death rate of car accidents. To address this concern, we plan to use R programming to show some facts and pay more attention to driving safety issues and obey traffic rules.
 
-_Keywords_: car accident, severity, the U.S., factor.
+**Keywords**: _car accident, severity, the U.S., factor._
 
 <br>
 <br>
@@ -182,39 +182,31 @@ This table shows the sample data we concluded for a single case that can be used
 
 <br>
 
-<div align = "center"><h4>Implications</h4></div>
+&nbsp;&nbsp;&nbsp;&nbsp;Impacted by our car accident data, Car drivers, Vehicle manufactures , Government will adhere to the principle of “safety”.
 
-&nbsp;&nbsp;&nbsp;&nbsp;Impacted by our car accident data, Car drivers, Vehicle manufactures , Government will adhere to the principle of **"safety"**. And attach more attention to driving safety in accident-prone roads, such as slow down, pay attention to the driving of large cars, and for the safety of their own life and others, do not take drugs when driving. Vehicle manufactures improve the production and testing process by identifying the frequency of Vehicle manufactures in the data graph for car accident rate of the different brands.The Government will focus on formulating road safety policies to reduce the incidence of accidents on accident-prone roads.
+&nbsp;&nbsp;&nbsp;&nbsp;The chart about spot death rate with using restraint clearly reflects the importance of safety measures when driving or riding in a car. so, to raise awareness about this. The legislature should do its part and make it illegal to not use important safety measures, such as not wearing a seat belt while driving. In another aspect, licensing agencies should ensure that only those who have completed a traffic safety education course including learning  the data we calculated (the spot death rate with no restraint use in cars is 41 percent) can get a driving license in order to make every driver properly aware of the necessity of using safety measures while driving. 
+
+&nbsp;&nbsp;&nbsp;&nbsp;For the pie chart (the relationship between different types of road and the death number of people on different roads), we can find that the death number on highways in general is super large. This data is really important to be noticed by the government and drivers. Then, the government should set up signs on highways to warn people that they should pay attention to driving safely and to place some speed bumps in proper positions (before a sharp turn, etc.) to avoid accidents. For drivers, it is important to tell themselves that on highways in general they cannot be distracted by something unrelated to driving.
+
+&nbsp;&nbsp;&nbsp;&nbsp;For the bar chart (Fatal crashes: top five automakers (2017 - 2019),  it gives suggestions to  people about choosing appropriate cars that is less prone to accidents. Also, for automakers. These five automakers should mainly focus on analyzing crash characteristics and environmental conditions, and then simulate the typical characteristics of crashes to further improve safety measures to protect drivers and passengers in car crashes. 
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;As for the treemap chart (Drug specification for 2018 - 2019) This chart told people should enhance their awareness about drugs: “Drive without drugs, drugs without driving, especially for some controversial drugs(some state’s law published that it is a illegal, but some state’s law published it is legal.)”. This chart also gives some hints for the transportation department that traffic police should test drivers for drug use to reduce car crashes.
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;All in all, the charts created above are crucial not only for people to enhance their safety awareness while driving, but also for governments and other institutes playing their role in perfecting laws, regulations and road construction.
 
 <br>
-
-<div align = "center"><h4>Limitations</h4></div>
-
-&nbsp;&nbsp;&nbsp;&nbsp;There are three limitations for this project. For the first chart, the statistical variety is not very comprehensive, we can only summarizes the same restriction ways in the three years. Another limitations is that the data for the second plot is kind of inaccurate, because some data is lost. The final limitations is that we find some data for the fourth plot is inadequate.  It only has two years (from 2018 to 2019).
 
 <br>
 <br>
 
 <div align = "center"><h2>Conclusion</h2></div>
-```{r summary, echo=FALSE, warning=FALSE, message=FALSE}
-source("../source/Summary.R")
-fat_type <- summary[[5]]
-fat_2017 <- summary[[6]]
-fat_2018 <- summary[[7]]
-fat_2019 <- summary[[8]]
-highest_death <- summary[[2]]
-total_inci <- summary[[4]]
-top_five_make <- summary[[3]]
-porp <- summary[[1]]
-```
 
-&nbsp;&nbsp;&nbsp;&nbsp;For the first plot - the death rate of car accidents, we can find that without using any restraint is always much higher than that of using restraint. We categorized the use of restraint into three the following three types: `r fat_type`. The death rates of use of each restraint are `r fat_2017` in 2017 respectively; `r fat_2018` in 2018 respectively; and `r fat_2019` in 2019 respectively. We analyzing in the R programming. We hope to illustrate the importance of using safety restraint on the car from this data graph and highly recommend people using some protective measures on the car to protect life safety.
-
-Depended on the second plot, it is important to know that when driving cars on the `r highest_death`, the drivers should pay more attention on these thing. Because at this place, there are many people driving their cars, that why there are so many death number. The drivers should also need to pay attention when driving on U.S. Highway, because the speed of the car on that place is super high, under this condition, it is impossible to hold it.
-
-As for the third plot, we can find that from January 2017 to December 2019, `r total_inci` incidents occurred in USA. Among all 70 different auto makers NHTSA categorized, `r top_five_make` made up of about 25% of all incidents happened. This gives us some suggestions about buying cars.
-
-For drugs(specified for fourth plot), the best suggestion is “Never drive when you are high with something”, even if we know there must be some people who never remember that. Something else that these data show is that people do not recognize marijuana as a kind of drug, even this factor always appears in fatal car accidents. For 2018 and 2019, marijuana has a high proportion which is around `r porp`. So when drive your cars, make sure you are not affected by drugs. This is the last suggestion we give to the readers.
+1. For the facet chart, it shows the death rate of  no restraint use  is much higher than that of using restraint, which warns us that we must use restraints in car.
+2. According to the pie chart, when driving on the highway, people should pay attention to driving to avoid traffic accidents.
+3. For the bar chart, it gives automakers some warnings of enhancing security measures to protect people from car crashes.
+4. The treemap chart aims  to let drivers notice the dangerousness of driving with drugs, which warns drivers to drive without drugs, drugs without driving.
 
 <br>
 <br>
