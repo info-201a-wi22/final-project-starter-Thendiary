@@ -4,7 +4,7 @@ library("plotly")
 library("knitr")
 library("dplyr")
 
-source("interactive_plot/Route_classification_chart.R")
+source("source/interactive_plot/Route_classification_chart.R")
 chart_2 <-tabPanel(
   "Route classification",
   titlePanel("The relationship between the proportional death number of people and the type of the road.."),

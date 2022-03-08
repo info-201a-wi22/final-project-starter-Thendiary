@@ -2,9 +2,9 @@ library("dplyr")
 library("tidyverse")
 library("ggplot2")
 
-Person2017<- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/Person.CSV")
-Person2018 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/Person.CSV")
-Person2019 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2019NationalCSV/Person.CSV")
+Person2017<- read.csv("data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/Person.CSV")
+Person2018 <- read.csv("data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/Person.CSV")
+Person2019 <- read.csv("data/Carccident/Fatal_vehicle_crashes/FARS2019NationalCSV/Person.CSV")
 
 # the died at scene rate for not using restraint system in 2017
 num_total_norest2017 <- Person2017 %>%

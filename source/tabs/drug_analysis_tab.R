@@ -6,9 +6,9 @@ library("treemapify")
 library("knitr")
 library("shiny")
 
-source("interactive_plot/drug_chart.R")
+source("source/interactive_plot/drug_chart.R")
 
-source("drug_data.R")
+source("source/drug_data.R")
 
 drug_tab <- tabPanel(
   "Addictive Driving",

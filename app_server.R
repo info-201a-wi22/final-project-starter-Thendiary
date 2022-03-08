@@ -4,10 +4,10 @@ library("plotly")
 library("knitr")
 library("dplyr")
 
-source("../source/interactive_plot/Restraint_Chart.R")
-source("../source/interactive_plot/Route_classification_chart.R")
-source("../source/interactive_plot/auto_tab_plot.R")
-source("../source/interactive_plot/drug_plot.R")
+source("source/interactive_plot/Restraint_Chart.R")
+source("source/interactive_plot/Route_classification_chart.R")
+source("source/interactive_plot/auto_tab_plot.R")
+source("source/interactive_plot/drug_plot.R")
 
 server <- function(input, output) {
   
@@ -36,7 +36,7 @@ server <- function(input, output) {
     })
     
     output$report <- renderUI({
-      includeHTML("../docs/index.html")
+      includeHTML("docs/index.html")
     })
     
     output$drug <- renderPlot({

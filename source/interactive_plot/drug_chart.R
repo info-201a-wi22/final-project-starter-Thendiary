@@ -1,4 +1,4 @@
-source("drug_data.R")
+source("source/drug_data.R")
 
 plot_drug <- function(drugs){
   drug_test <- filter(drug_test, DRUGRESNAME %in% drugs)

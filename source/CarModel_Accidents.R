@@ -2,19 +2,18 @@ library("dplyr")
 library("tidyverse")
 library("ggplot2")
 
-vehicle_2017 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/Vehicle.csv")
+vehicle_2017 <- read.csv("data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/Vehicle.CSV")
 num_incidents_2017 <- nrow(vehicle_2017)
 
-vehicle_2018 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/Vehicle.csv")
+vehicle_2018 <- read.csv("data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/Vehicle.CSV")
 num_incidents_2018 <- nrow(vehicle_2018)
 
-vehicle_2019 <- read.csv("../data/Carccident/Fatal_vehicle_crashes/FARS2019NationalCSV/Vehicle.csv")
+vehicle_2019 <- read.csv("data/Carccident/Fatal_vehicle_crashes/FARS2019NationalCSV/Vehicle.CSV")
 num_incidents_2019 <- nrow(vehicle_2019)
 
 summary_make <- function(df, num_inci) {
   make_summary <- df %>% 
     group_by(MAKENAME) %>% 
-    #select(MAKENAME, NUMOCCS) %>% 
     summarise(Make_incidents = n()) %>% 
     mutate(Proportion = Make_incidents / num_inci)
   

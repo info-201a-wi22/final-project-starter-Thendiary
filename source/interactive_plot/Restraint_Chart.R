@@ -3,7 +3,7 @@ library("ggplot2")
 library("plotly")
 library("dplyr")
 
-source("fatality_relating_restraint.R")
+source("source/fatality_relating_restraint.R")
 
 # Average died at scene rate without using restraint
 Avg_NoR_Drate<- sum(num_notuse_died_at_scene2017, num_notuse_died_at_scene2018, num_notuse_died_at_scene2019) / 

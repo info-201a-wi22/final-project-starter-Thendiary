@@ -3,7 +3,7 @@ library("ggplot2")
 library("plotly")
 library("dplyr")
 
-source("interactive_plot/auto_tab_plot.R")
+source("source/interactive_plot/auto_tab_plot.R")
 
 auto_scatter_tab <- tabPanel(
   "Auto Maker",

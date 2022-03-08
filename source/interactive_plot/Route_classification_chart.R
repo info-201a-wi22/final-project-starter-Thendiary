@@ -5,7 +5,7 @@ library("knitr")
 library("dplyr")
 
 
-source("Route_classification.R")
+source("source/Route_classification.R")
 
 sum_route_death_2019 <- sum(route_death_2019$total_death_2019)
 route_death_2019 <- route_death_2019 %>%

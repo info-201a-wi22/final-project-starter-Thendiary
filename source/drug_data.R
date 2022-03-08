@@ -2,14 +2,13 @@ library("dplyr")
 library("tidyverse")
 library("ggplot2")
 library("stringr")
-#install.packages("treematify")
 library("treemapify")
 
 # Read csv files.
 Drugs_2018 <- read.csv(
-  "../data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/Drugs.CSV")
+  "data/Carccident/Fatal_vehicle_crashes/FARS2018NationalCSV/Drugs.CSV")
 Drugs_2019 <- read.csv(
-  "../data/Carccident/Fatal_vehicle_crashes/FARS2019NationalCSV/Drugs.CSV")
+  "data/Carccident/Fatal_vehicle_crashes/FARS2019NationalCSV/Drugs.CSV")
 
 # Filter out important information.
 Drugs_tested_2018 <- Drugs_2018 %>%
