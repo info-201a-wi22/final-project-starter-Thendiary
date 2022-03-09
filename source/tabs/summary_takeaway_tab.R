@@ -9,20 +9,20 @@ summary_take <- tabPanel(
   titlePanel(h1("Summary Takeways", align = "center")),
   fluidRow(
     column(1),
-    column(10, align = "center",
+    column(10,
            
-           HTML("<h3>What is the spot death rate relating to using restraint in car accidents from 2017 to 2019?</h3>?"),
+           HTML("<h3><center>What is the spot death rate relating to using restraint in car accidents from 2017 to 2019?</center></h3>"),
            HTML("<photo>
-                <img src= \"https://github.com/info-201a-wi22/final-project-starter-Thendiary/raw/main/docs/p01-proposal-assests/Seat_belt.jpg\">
+                <img src= \"https://github.com/info-201a-wi22/final-project-starter-Thendiary/raw/main/docs/p01-proposal-assests/Seat_beltED.jpg\">
                 </photo>"),
            HTML("<p>
                 &nbsp;&nbsp;&nbsp;&nbsp;The chart about Restraint in Car shows that the death rate of  no retraint use in car is much higher than that of using restraint. 
                 Thus, we should learn from this and pay much more attention to the use of restraint to ensure our life safety, whenever driving or riding in a car.
                 </p>"),
            
-           HTML("<h3>Is there a link between road classification and death number in car accidents?</h3>"),
+           HTML("<h3><center>Is there a link between road classification and death number in car accidents?</center></h3>"),
            HTML("<photo>
-                <img src= \"https://github.com/info-201a-wi22/final-project-starter-Thendiary/raw/main/docs/p01-proposal-assests/country_road.jpg\">
+                <img src= \"https://github.com/info-201a-wi22/final-project-starter-Thendiary/raw/main/docs/p01-proposal-assests/country_roadED.jpg\">
                 </photo>"),
            HTML("<p>
                 &nbsp;&nbsp;&nbsp;&nbsp;According to the pie chart, every year, the proportional death number of people for highways in general is over 50%, which is surprisingly fixed. 
@@ -30,9 +30,9 @@ summary_take <- tabPanel(
                 All in all, when people driving on highways in general are more likely to have car accidents, it is crucial for people to pay more attention when driving on the highway in general.
                 </p>"),
            
-           HTML("<h3>Which auto makes involved in most fatal crashes in US?</h3>"),
+           HTML("<h3><center>Which auto makes involved in most fatal crashes in US?</center></h3>"),
            HTML("<photo>
-                <img src = \"\">
+                <img src = \"https://github.com/info-201a-wi22/final-project-starter-Thendiary/raw/main/docs/p01-proposal-assests/car_makeED.jpg\">
                 </photo>"),
            HTML("<p>
                 &nbsp;&nbsp;&nbsp;&nbsp;Most automaker's involvement rate are consistent and small through the selected years. However the outliers are also obvious. Ford, Chevrolet, and few other brands,
@@ -40,9 +40,9 @@ summary_take <- tabPanel(
                 But owners of cars from these brands need to pay close attention to the build quality and design of their cars when encourter accidents.
                 </p>"),
            
-           HTML("<h3>What is the proportion of drug types in addictive driving cases?</h3>"),
+           HTML("<h3><center>What is the proportion of drug types in addictive driving cases?</center></h3>"),
            HTML("<photo>
-                <img src = \"https://github.com/info-201a-wi22/final-project-starter-Thendiary/raw/main/docs/p01-proposal-assests/Abuse_drugs.jpg\">
+                <img src = \"https://github.com/info-201a-wi22/final-project-starter-Thendiary/raw/main/docs/p01-proposal-assests/Abuse_drugsED.jpg\">
                 </photo>"),
            HTML("<p>
                 &nbsp;&nbsp;&nbsp;&nbsp;Most people in U.S. now are with a wrong opinion about drugs, especially about marijuana. However, marijuana, which is known as a gateway

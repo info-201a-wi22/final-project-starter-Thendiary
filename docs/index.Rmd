@@ -143,9 +143,6 @@ plot(p_rate)
 **Which auto makes involved in most fatal crashes in US?**
 
 ```{r, echo=FALSE, message=FALSE}
-# Example 1: Note relative path, which can be read: Up one
-# directory(..), down into source (/source), and 
-# then "source" an R file (data_access.R)
 source("../source/CarModel_Accidents.R")
 plot(top_five)
 ```
