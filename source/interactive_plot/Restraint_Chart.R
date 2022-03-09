@@ -17,24 +17,24 @@ avg_ubelt_drate <- sum(num_use_belt_died_at_scene2017,
   sum(num_total_use_belt2017, num_total_use_belt2018, num_total_use_belt2019)
 avg_ubelt_drate
 
-avg_ubseat_drate <- sum(num_use_booster_seat_died_at_scene2017,
-                       num_use_booster_seat_died_at_scene2018,
-                       num_use_booster_seat_died_at_scene2019) /
-  sum(num_total_use_booster_seat2017, num_total_use_booster_seat2018,
-      num_total_use_booster_seat2019)
+avg_ubseat_drate <- sum(num_ubseat_died_at_scene2017,
+                       num_ubseat_died_at_scene2018,
+                       num_ubseat_died_at_scene2019) /
+  sum(num_total_ubseat2017, num_total_ubseat2018,
+      num_total_ubseat2019)
 avg_ubseat_drate
 
 # create data frame
 type <- c("No Restraint", "Using Shoulder and Lap Belt", "Using Booster Seat")
 drate2017 <- c(round(norest_deathrate2017, digits = 4),
                round(use_belt_deathrate2017, digits = 4),
-               round(use_booster_seat_deathrate2017, digits = 4))
+               round(ubs_death_rate2017, digits = 4))
 drate2018 <- c(round(norest_deathrate2018, digits = 4),
                round(use_belt_deathrate2018, digits = 4),
-               round(use_booster_seat_deathrate2018, digits = 4))
+               round(ubseat_deathrate2018, digits = 4))
 drate2019 <- c(round(norest_deathrate2019, digits = 4),
                round(use_belt_deathrate2019, digits = 4),
-               round(use_booster_seat_deathrate2019, digits = 4))
+               round(ubseat_deathrate2019, digits = 4))
 davgrate <- c(round(avg_nor_drate, digits = 4),
               round(avg_ubelt_drate, digits = 4),
               round(avg_ubseat_drate, digits = 4))

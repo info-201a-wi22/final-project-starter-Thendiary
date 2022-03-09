@@ -54,8 +54,8 @@ num_ubseat_died_at_scene2017 <- person2017 %>%
   nrow()
 num_ubseat_died_at_scene2017
 
-ubs_death_rate2017 <- num_use_booster_seat_died_at_scene2017 /
-  num_total_use_booster_seat2017
+ubs_death_rate2017 <- num_ubseat_died_at_scene2017 /
+  num_total_ubseat2017
 ubs_death_rate2017
 
 # the died at scene rate for not using restraint system in 2018
@@ -103,8 +103,8 @@ num_ubseat_died_at_scene2018 <- person2018 %>%
   nrow()
 num_ubseat_died_at_scene2018
 
-ubseat_deathrate2018 <- num_use_booster_seat_died_at_scene2018 /
-  num_total_use_booster_seat2018
+ubseat_deathrate2018 <- num_ubseat_died_at_scene2018 /
+  num_total_ubseat2018
 ubseat_deathrate2018
 
 # the died at scene rate for not using restraint system in 2019
@@ -142,46 +142,46 @@ use_belt_deathrate2019
 
 # the died at scene rate for using Booster Seat in 2019
 
-num_total_use_booster_seat2019 <- person2019 %>%
+num_total_ubseat2019 <- person2019 %>%
   filter(REST_USENAME == "Booster Seat") %>%
   nrow()
-num_total_use_booster_seat2019
+num_total_ubseat2019
 
 num_ubseat_died_at_scene2019 <- person2019 %>%
   filter(REST_USENAME == "Booster Seat", DOANAME == "Died at Scene") %>%
   nrow()
 num_ubseat_died_at_scene2019
 
-ubseat_deathrate2019 <- num_use_booster_seat_died_at_scene2019 /
-  num_total_use_booster_seat2019
+ubseat_deathrate2019 <- num_ubseat_died_at_scene2019 /
+  num_total_ubseat2019
 ubseat_deathrate2019
 
 # create data frame
 type <- c("No Restraint", "Using Shoulder and Lap Belt", "Using Booster Seat")
 rate2017 <- c(round(norest_deathrate2017, digits = 4),
               round(use_belt_deathrate2017, digits = 4),
-              round(use_booster_seat_deathrate2017, digits = 4))
+              round(ubs_death_rate2017, digits = 4))
 rate2018 <- c(round(norest_deathrate2018, digits = 4),
               round(use_belt_deathrate2018, digits = 4),
-              round(use_booster_seat_deathrate2018, digits = 4))
+              round(ubseat_deathrate2018, digits = 4))
 rate2019 <- c(round(norest_deathrate2019, digits = 4),
               round(use_belt_deathrate2019, digits = 4),
-              round(use_booster_seat_deathrate2019, digits = 4))
+              round(ubseat_deathrate2019, digits = 4))
 fatality <- data.frame(type, rate2017, rate2018, rate2019)
 
 # draw the plot
-ggplot(fatality, aes(x = Type, y = rate2017)) +
+ggplot(fatality, aes(x = type, y = rate2017)) +
   geom_bar(stat = "identity") +
   ylab("2017 - Spot Death Rate") +
   xlab("Using Restraint")
 
 
-ggplot(fatality, aes(x = Type, y = rate2018)) +
+ggplot(fatality, aes(x = type, y = rate2018)) +
   geom_bar(stat = "identity") +
   ylab("2018 - Spot Death Rate") +
   xlab("Using Restraint")
 
-ggplot(fatality, aes(x = Type, y = rate2019)) +
+ggplot(fatality, aes(x = type, y = rate2019)) +
   geom_bar(stat = "identity") +
   ylab("2019 - Spot Death Rate") +
   xlab("Using Restraint")
@@ -200,5 +200,5 @@ plot_mortality <- ggplot(fatalitylong, aes(x = type, y = value, fill = type)) +
   ) +
   geom_text(aes(label = value), vjust = 1.6, color = "white", size = 3.5) +
   theme(axis.text.x = element_text(angle = -45, hjust = 0))
-  
+
 plot_mortality
