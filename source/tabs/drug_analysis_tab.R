@@ -24,7 +24,11 @@ drug_tab <- tabPanel(
       )
     ),
     mainPanel(
-      plotOutput("drug")
+      plotOutput("drug"),
+      p("This chart shows how many percentage that each kind of drugs are found in cases
+         with a positive test result. It can be seen clearly that, except the other drugs, 
+        the most common one is marijuana, which is now legal in law in a lot of states in 
+        U.s..")
     )
   )
 )
