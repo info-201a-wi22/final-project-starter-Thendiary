@@ -13,7 +13,7 @@ server <- function(input, output) {
   
 # This is the graph.
     output$chart_ggplot <- renderPlotly({
-      return(build_graph(fatality, input$YR))
+      return(build_graph(fatality, input$yr))
     })
     
     output$plotly_graph <- renderPlotly({
