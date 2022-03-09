@@ -22,10 +22,12 @@ chart <-tabPanel(
     mainPanel(
       plotlyOutput("chart_ggplot"),
       p("The chart analyzes the average of on-the-spot death rates from 2017 to 
-        2019 and over three years for the use of types of Restraint. From the 
-        graph, we can clearly see that the death rate in cars without any safety 
+        2019 and over three years for the use of types of  Restraint. From the 
+        graph, we can clearly see that the death rate in cars without any safety
         measures (about 41%) is much higher than that in cars with safety 
-        measures (about 5%/ about %14).")
+        measures (about 5%/ about %14). From this, we can draw the conclusion 
+        that it is necessary to use safety restraint in driving and 
+        riding in car.")
     )
   )
 )
