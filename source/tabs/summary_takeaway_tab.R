@@ -45,7 +45,11 @@ summary_take <- tabPanel(
                 <img src = \"https://github.com/info-201a-wi22/final-project-starter-Thendiary/raw/main/docs/p01-proposal-assests/Abuse_drugsED.jpg\">
                 </photo>"),
            HTML("<p>
-                &nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;Most people in U.S. now are with a wrong opinion about drugs, especially about marijuana. However, marijuana, which is known as a gateway
+                drug, is leading people to recognize the action of using drug as a way for entertainment. Accroding to the tree map, among those cases that are found positive in
+                 drug tests, almost a half of them are addicted to other drugs, which means they combined several different kinds of drugs and really think they are just relaxing 
+                 themselves. Whether or not using drugs in daily life is people's right, but for others' lives and for driver's lives, when driving, make sure you are not under effect
+                 of drugs.
                 </p>")),
     column(1)
   )
