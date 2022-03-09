@@ -2,9 +2,6 @@ library("dplyr")
 library("tidyverse")
 library("ggplot2")
 
-library("lintr")
-lint("CarModel_Accidents.R")
-
 vehicle_2017 <- read.csv("data/Carccident/Fatal_vehicle_crashes/FARS2017NationalCSV/Vehicle.CSV")
 num_incidents_2017 <- nrow(vehicle_2017)
 
