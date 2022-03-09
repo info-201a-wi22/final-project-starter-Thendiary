@@ -19,10 +19,10 @@ drugs_tested_2019 <- drugs_2019 %>%
   filter(DRUGRESNAME != "Test Not Given")
 
 tested_2018 <- paste(
-  round(nrow(Drugs_tested_2018) / nrow(Drugs_2018) * 100, 2), "%", sep = ""
+  round(nrow(drugs_tested_2018) / nrow(drugs_2018) * 100, 2), "%", sep = ""
   )
 tested_2019 <- paste(
-  round(nrow(Drugs_tested_2019) / nrow(Drugs_2019) * 100, 2), "%", sep = ""
+  round(nrow(drugs_tested_2019) / nrow(drugs_2019) * 100, 2), "%", sep = ""
 )
 
 # Found how many positive cases.
@@ -87,3 +87,4 @@ plot_drug <- ggplot(drug_test, aes(area = num, fill = DRUGRESNAME,
                     place = "centre") +
   ggtitle("Drug specification for 2018-2019")
 plot_drug
+
