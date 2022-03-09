@@ -1,13 +1,13 @@
 name: final-project-starter-Thendiary
 title: final-project-starter-Thendiary
 username:
-account: qiuiqing-ge
+account: thendiary
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
-appId: 5809926
-bundleId: 5658622
-url: https://qiuiqing-ge.shinyapps.io/final-project-starter-Thendiary/
-when: 1646781536.49087
-lastSyncTime: 1646781536.4909
+appId: 5803294
+bundleId: 5658663
+url: https://thendiary.shinyapps.io/final-project-starter-Thendiary/
+when: 1646782229.81764
+lastSyncTime: 1646782229.81764
 asMultiple: FALSE
 asStatic: FALSE
