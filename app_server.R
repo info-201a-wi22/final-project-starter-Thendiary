@@ -10,16 +10,16 @@ source("source/interactive_plot/auto_tab_plot.R")
 source("source/interactive_plot/drug_plot.R")
 
 server <- function(input, output) {
-  
+
 # This is the graph.
     output$chart_ggplot <- renderPlotly({
       return(build_graph(fatality, input$yr))
     })
-    
+
     output$plotly_graph <- renderPlotly({
       return(graph(data, input$variable))
     })
-    
+
     auto_choice <- reactive({
       if (input$year == 3) {
         auto_scatter(make_all)
@@ -34,11 +34,11 @@ server <- function(input, output) {
     output$auto_scatter_plot <- renderPlotly({
       auto_choice()
     })
-    
+
     output$report <- renderUI({
       includeHTML("docs/index.html")
     })
-    
+
     output$drug <- renderPlot({
       plot_drug(input$drugs)
     })
