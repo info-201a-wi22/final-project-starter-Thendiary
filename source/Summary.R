@@ -8,7 +8,7 @@ fat_2018 <- fatality$Rate2018
 fat_2019 <- fatality$Rate2019
 summary <- list(
   propotion,
-  highest_death_place, 
+  highest_death_place,
   top_five_df$MAKENAME,
   total_incident,
   fatality$Type,
@@ -16,4 +16,3 @@ summary <- list(
   fat_2018,
   fat_2019
   )
-
