@@ -10,6 +10,7 @@ source("source/tabs/auto_tab.R")
 source("source/tabs/report_tab.R")
 source("source/tabs/intro_tab.R")
 source("source/tabs/drug_analysis_tab.R")
+source("source/tabs/summary_takeaway_tab.R")
 
 ui <- navbarPage(
   title = "Carccident",
@@ -18,5 +19,6 @@ ui <- navbarPage(
   chart_2,
   auto_scatter_tab,
   drug_tab,
+  summary_take,
   report
 )
