@@ -6,54 +6,66 @@ library("dplyr")
 source("source/fatality_relating_restraint.R")
 
 # Average died at scene rate without using restraint
-Avg_NoR_Drate<- sum(num_notuse_died_at_scene2017, num_notuse_died_at_scene2018, num_notuse_died_at_scene2019) / 
-  sum(num_total_norest2017, num_total_norest2018, num_total_norest2019) 
-Avg_NoR_Drate
+avg_nor_drate <- sum(num_notuse_died_at_scene2017, num_notuse_died_at_scene2018,
+                    num_notuse_died_at_scene2019) / sum(num_total_norest2017,
+                    num_total_norest2018, num_total_norest2019)
+avg_nor_drate
 
-Avg_UBelt_Drate<- sum(num_use_belt_died_at_scene2017, num_use_belt_died_at_scene2018, num_use_belt_died_at_scene2019) / 
-  sum(num_total_use_belt2017, num_total_use_belt2018, num_total_use_belt2019) 
-Avg_UBelt_Drate
+avg_ubelt_drate <- sum(num_use_belt_died_at_scene2017,
+                      num_use_belt_died_at_scene2018,
+                      num_use_belt_died_at_scene2019) /
+  sum(num_total_use_belt2017, num_total_use_belt2018, num_total_use_belt2019)
+avg_ubelt_drate
 
-Avg_UBSeat_Drate<- sum(num_use_booster_seat_died_at_scene2017, num_use_booster_seat_died_at_scene2018, num_use_booster_seat_died_at_scene2019) / 
-  sum(num_total_use_booster_seat2017, num_total_use_booster_seat2018, num_total_use_booster_seat2019) 
-Avg_UBSeat_Drate
+avg_ubseat_drate <- sum(num_use_booster_seat_died_at_scene2017,
+                       num_use_booster_seat_died_at_scene2018,
+                       num_use_booster_seat_died_at_scene2019) /
+  sum(num_total_use_booster_seat2017, num_total_use_booster_seat2018,
+      num_total_use_booster_seat2019)
+avg_ubseat_drate
 
 # create data frame
-Type <- c( "No Restraint", "Using Shoulder and Lap Belt", "Using Booster Seat")
-DRate2017 <- c(round(norest_deathrate2017, digits = 4), round(use_belt_deathrate2017, digits = 4),round(use_booster_seat_deathrate2017, digits = 4))
-DRate2018 <- c(round(norest_deathrate2018, digits = 4), round(use_belt_deathrate2018, digits = 4),round(use_booster_seat_deathrate2018, digits = 4))
-DRate2019 <- c(round(norest_deathrate2019, digits = 4), round(use_belt_deathrate2019, digits = 4),round(use_booster_seat_deathrate2019, digits = 4))
-DAvgRate <- c(round(Avg_NoR_Drate, digits = 4), round(Avg_UBelt_Drate, digits = 4), round(Avg_UBSeat_Drate, digits = 4))
-fatality <- data_frame(Type, DRate2017,DRate2018, DRate2019, DAvgRate)
+type <- c("No Restraint", "Using Shoulder and Lap Belt", "Using Booster Seat")
+drate2017 <- c(round(norest_deathrate2017, digits = 4),
+               round(use_belt_deathrate2017, digits = 4),
+               round(use_booster_seat_deathrate2017, digits = 4))
+drate2018 <- c(round(norest_deathrate2018, digits = 4),
+               round(use_belt_deathrate2018, digits = 4),
+               round(use_booster_seat_deathrate2018, digits = 4))
+drate2019 <- c(round(norest_deathrate2019, digits = 4),
+               round(use_belt_deathrate2019, digits = 4),
+               round(use_booster_seat_deathrate2019, digits = 4))
+davgrate <- c(round(avg_nor_drate, digits = 4),
+              round(avg_ubelt_drate, digits = 4),
+              round(avg_ubseat_drate, digits = 4))
+fatality <- data_frame(type, drate2017, drate2018, drate2019, davgrate)
 
 
 # build graph
-build_graph <- function(data, YR) {
-  varaible <- as.character(YR)
+build_graph <- function(data, yr) {
+  varaible <- as.character(yr)
   y_axis <- "Rate"
-  if(YR == "DRate2017") {
+  if (yr == "drate2017") {
     y_axis <- "Spot Death Rate in 2017"
-  } else if (YR == "DRate2018") {
+  } else if (yr == "drate2018") {
     y_axis <- "Spot Death Rate in 2018"
-  } else if (YR == "DRate2019"){
+  } else if (yr == "drate2019") {
     y_axis <- "Spot Death Rate in 2019"
-  } else if (YR == "DAvgRate") {
+  } else if (yr == "davgrate") {
     y_axis <- "Average Spot Death Rate(2017-2019)"
   }
-  
+
   chart_ggplot <- fatality %>%
-    ggplot(aes(x = Type, y =.data[[YR]], fill = Type)) +
+    ggplot(aes(x = type, y = .data[[yr]], fill = type)) +
     geom_col() +
-    geom_text(aes(label=paste0(.data[[YR]] * 100, "%")), vjust=-1.5, size=3.5)+
+    geom_text(aes(label = paste0(.data[[yr]] * 100, "%")), vjust = -1.5,
+              size = 3.5) +
     theme(axis.text.x = element_text(angle = -45, hjust = 0)) +
     labs(x = "Restraint Type",
          y = y_axis,
          title = paste0(y_axis, " relating using Restraints in Car"))
-  
+
   chart_ggplot <- ggplotly(chart_ggplot)
-  
+
   return(chart_ggplot)
 }
-
-build_graph(fatality, "DAvgRate")
-
